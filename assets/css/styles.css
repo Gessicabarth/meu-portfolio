@@ -1,0 +1,251 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400&display=swap');
+
+/* Reset básico para remover margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos no tamanho total dos elementos */
+}
+
+/* Definição de variáveis de cores para facilitar a manutenção do tema */
+:root {
+    --background-gradient: repeating-linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4); /* Gradiente de fundo com repetição sutil */
+    --title-color: #E6B2BA; /* Cor do título */
+    --text-color: #321c0f; /* Cor do texto */
+    --menu-bg: rgba(255, 248, 246, 0.9); /* Cor de fundo do menu */
+    --menu-text: #2A0405; /* Cor do texto do menu */
+    --color-Background-menu-select: #C599B6; /* Cor dos fundo do menu selecionado */
+    --menu-active: #321c0f; /* Cor do texto do menu ativo no cabeçalho */
+    --icon-color: #A28C14; /* Cor dos ícones decorativos */
+    --footer-bg: rgba(255, 248, 246, 0.9); /* Cor de fundo do rodapé */
+    --footer-text: #321c0f; /* Cor do texto do rodapé */
+}
+
+/* Garantindo que o gradiente cubra toda a página */
+html {
+    height: 100%; /* Garante que o gradiente cubra toda a altura */
+    background: var(--background-gradient); /* Aplica o gradiente */
+    background-attachment: fixed; /* Faz o gradiente permanecer fixo ao rolar */
+    background-size: cover; /* Garante que o gradiente cubra toda a área */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Old Standard TT', sans-serif; /* Define a fonte principal */
+    color: var(--text-color); /* Define a cor do texto */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove paddings externos */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da tela */
+    display: flex; /* Torna o corpo um contêiner flexível */
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+/* Estilo do contêiner principal */
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}
+
+/* Estilo do cabeçalho e menu */
+header {
+    position: relative; /* Permite que o cabeçalho role junto com a página */
+    top: 15px; /* Define a posição inicial no topo */
+    background-color: var(--menu-bg); /* Cor de fundo do cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno: 10px em cima/baixo, 20px nas laterais */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin: 5px auto 5px auto; /* Margem externa: 20px em cima, 40px embaixo, centralizado horizontalmente */
+    max-width: 1200px; /* Define uma largura máxima para o cabeçalho */
+    width: calc(100% - 100px); /* Ajusta a largura para considerar o espaçamento lateral */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o cabeçalho */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    display: flex; /* Garante que o gap funcione */
+}
+
+/* Estilo do menu de navegação */
+nav {
+    display: flex; /* Coloca os links do menu em linha */
+    margin-left: 150px; /* Adiciona espaço à esquerda do menu */
+}
+
+/* Estilo dos links dentro do menu */
+nav a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: var(--menu-text); /* Define a cor do texto dos links */
+    font-size: 1.1rem; /* Define o tamanho do texto dos links */
+    font-weight: 400; /* Define a espessura do texto */
+    padding: 5px 10px; /* Adiciona espaço interno ao redor do texto */
+    border-radius: 5px; /* Deixa as bordas dos links arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona um efeito suave ao passar o mouse */
+    margin-right: 30px; /* Adiciona espaço entre os links */
+}
+
+/* Remove o espaço do último link no menu */
+nav a:last-child {
+    margin-right: 0; /* Remove o espaço à direita do último link */
+}
+
+/* Estilo ao passar o mouse ou quando o link está ativo */
+nav a:hover,
+nav a.active {
+    background-color: var(--color-Background-menu-select); /* Muda a cor de fundo ao passar o mouse ou quando ativo */
+    color: #fff; /* Muda a cor do texto para branco */
+}
+
+/* Estilo da seção "Sobre mim" */
+section#sobre-mim {
+    overflow: visible; /* Permite que a imagem ultrapasse os limites do contêiner */
+    padding: 20px; /* Espaçamento interno */
+    margin: 50px 0 0 80px; /* Aumenta a margem superior para criar mais espaçamento entre o cabeçalho e a imagem */
+    width: calc(100% - 20px); /* Ajusta a largura para considerar o espaçamento lateral */
+    max-width: none; /* Remove a limitação de largura máxima */
+}
+
+.conteudo-sobre-mim {
+    padding: 0; /* Remove qualquer espaçamento interno */
+    margin: 0; /* Remove margens externas */
+}
+
+.titulo-sobre-mim {
+    font-family: 'Dancing Script', sans-serif; /* Fonte decorativa para o título */
+    font-size: 4.5rem; /* Ajusta o tamanho do título */
+    font-weight: 400; /* Peso da fonte */
+    color: var(--title-color); /* Cor do título */
+    margin: 0 0 20px 0; /* Espaçamento inferior */
+    text-align: left; /* Alinha o título à esquerda */
+    background: linear-gradient(to right, #E6B2BA, #5A2A27, #E6B2BA);
+    background-clip: text; /* Propriedade padrão para compatibilidade */
+    -webkit-background-clip: text; /* Propriedade com prefixo para navegadores baseados em WebKit */
+    -webkit-text-fill-color: transparent; /* Torna o fundo visível no texto */
+    text-shadow: 2px 2px 4px rgba(70, 34, 34, 0.3); /* Sombra leve para destacar o texto */
+}
+
+
+.texto-sobre-mim {
+    font-size: 1.1rem; /* Tamanho da fonte */
+    line-height: 1.8; /* Espaçamento entre linhas */
+    color: var(--text-color); /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: justify; /* Justifica o texto */
+    max-width: 800px; /* Define a largura máxima do texto */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+.texto-sobre-mim:first-of-type {
+    text-indent: 0em; /* Recuo na primeira linha */
+}
+
+.texto-sobre-mim:nth-of-type(-n+7) {
+    margin-left: 2em; /* Recuo para as primeiras 7 linhas */
+}
+
+/* Lista de curiosidades */
+section#sobre-mim ul {
+    margin-top: 15px; /* Espaçamento acima da lista */
+    padding-left: 0; /* Recuo para alinhar os itens da lista */
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte */
+    line-height: 1.2; /* Reduz o espaçamento entre as linhas */
+}
+
+section#sobre-mim ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte dos itens */
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte */
+    line-height: 1.2; /* Reduz o espaçamento entre as linhas */
+}
+
+/* Estilo da foto de perfil */
+.foto-perfil {
+    width: 290px; /* Mantém o tamanho grande da largura */
+    height: 290px; /* Mantém o tamanho grande da altura */
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 3px solid #FEEADF; /* Adiciona uma borda */
+    box-shadow: 0px 20px 20px rgba(241, 164, 164, 0.2); /* Sombra da caixa */
+    object-fit: cover; /* Ajusta a imagem ao contêiner sem distorção */
+    object-position: center; /* Centraliza a imagem dentro do círculo */
+    margin-left: 10px; /* Recuo maior para o canto esquerdo */
+    margin-right: 100px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    float: left; /* Posiciona a imagem à esquerda */
+}
+
+
+/* Estilo dos ícones decorativos */
+.icons {
+    position: absolute; /* Posicionamento relativo ao contêiner pai */
+    top: 70%; /* Aumenta a distância do topo para criar mais espaço */
+    right: 100px; /* Distância da borda direita */
+    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+    display: flex; /* Exibe os ícones em coluna */
+    flex-direction: column;
+    gap: 70px; /* Espaçamento entre os ícones */
+}
+
+.icons img {
+    width: 40px; /* Largura dos ícones */
+    height: 40px; /* Altura dos ícones */
+    color: var(--icon-color); /* Cor dos ícones */
+    opacity: 0.9; /* Transparência inicial */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animação suave */
+}
+
+.icons img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+    opacity: 1; /* Remove a transparência */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: var(--footer-bg); /* Cor de fundo do rodapé */
+    color: var(--footer-text); /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 20px; /* Aumenta o espaçamento interno na altura */
+    margin: 0; /* Remove margens externas */
+    position: relative; /* O rodapé se ajusta ao fluxo normal da página */
+    left: 0; /* Garante que o rodapé comece no lado esquerdo */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da tela */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    z-index: 500; /* Garante que o rodapé fique abaixo do cabeçalho */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+
+
+
+
+#light-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Impede que interfira na interação do usuário */
+    z-index: -1; /* Garante que os feixes fiquem atrás do conteúdo */
+}
+
+.light {
+    position: absolute;
+    width: 100px; /* Tamanho do feixe */
+    height: 100px;
+    background-image: url('../icons/brilho.png'); /* Caminho para a imagem do feixe */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6; /* Torna o feixe mais sutil */
+    animation: float 10s infinite ease-in-out; /* Animação suave */
+}
+
+
+/* Animação para os feixes flutuarem */
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
