@@ -95,24 +95,22 @@ nav a.active {
 
 /* Estilo da seção "Sobre mim" */
 section#sobre-mim {
-    overflow: visible; /* Permite que a imagem ultrapasse os limites do contêiner */
-    padding: 20px; /* Espaçamento interno */
-    margin: 50px 0 0 80px; /* Aumenta a margem superior para criar mais espaçamento entre o cabeçalho e a imagem */
-    width: calc(100% - 20px); /* Ajusta a largura para considerar o espaçamento lateral */
-    max-width: none; /* Remove a limitação de largura máxima */
+    text-align: justify; /* Justifica o texto para melhor organização */
+    padding: 20px 50px; /* Espaçamento interno */
+    margin: 60px auto; /* Centraliza horizontalmente */
+    width: 60%; /* Define uma largura menor para melhorar a legibilidade */
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+    background-color: var(--footer-bg);
+    border-radius: 3%;
 }
 
-.conteudo-sobre-mim {
-    padding: 0; /* Remove qualquer espaçamento interno */
-    margin: 0; /* Remove margens externas */
-}
-
-.titulo-sobre-mim {
+/* Título "Sobre mim" */
+section#sobre-mim h1 {
     font-family: 'Dancing Script', sans-serif; /* Fonte decorativa para o título */
     font-size: 4.5rem; /* Ajusta o tamanho do título */
     font-weight: 400; /* Peso da fonte */
     color: var(--title-color); /* Cor do título */
-    margin: 0 0 20px 0; /* Espaçamento inferior */
+    margin: 0; /* Ajusta o espaçamento superior e inferior */
     text-align: left; /* Alinha o título à esquerda */
     background: linear-gradient(to right, #E6B2BA, #5A2A27, #E6B2BA);
     background-clip: text; /* Propriedade padrão para compatibilidade */
@@ -121,24 +119,13 @@ section#sobre-mim {
     text-shadow: 2px 2px 4px rgba(70, 34, 34, 0.3); /* Sombra leve para destacar o texto */
 }
 
-
-.texto-sobre-mim {
-    font-size: 1.1rem; /* Tamanho da fonte */
-    line-height: 1.8; /* Espaçamento entre linhas */
+/* Texto da seção - paragrafo */
+/* Texto da seção */
+section#sobre-mim p {
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte */
+    line-height: 2; /* Reduz o espaçamento entre as linhas */
+    margin: 0; /* Aumenta o espaçamento entre os parágrafos */
     color: var(--text-color); /* Cor do texto */
-    margin-bottom: 20px; /* Espaçamento inferior */
-    text-align: justify; /* Justifica o texto */
-    max-width: 800px; /* Define a largura máxima do texto */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
-}
-
-.texto-sobre-mim:first-of-type {
-    text-indent: 0em; /* Recuo na primeira linha */
-}
-
-.texto-sobre-mim:nth-of-type(-n+7) {
-    margin-left: 2em; /* Recuo para as primeiras 7 linhas */
 }
 
 /* Lista de curiosidades */
@@ -158,19 +145,21 @@ section#sobre-mim ul li {
 
 /* Estilo da foto de perfil */
 .foto-perfil {
-    width: 290px; /* Mantém o tamanho grande da largura */
-    height: 290px; /* Mantém o tamanho grande da altura */
-    border-radius: 50%; /* Torna a imagem circular */
-    border: 3px solid #FEEADF; /* Adiciona uma borda */
-    box-shadow: 0px 20px 20px rgba(241, 164, 164, 0.2); /* Sombra da caixa */
+    width: 290px; /* Aumenta a largura do círculo */
+    height: 290px; /* Aumenta a altura do círculo */
+    border-radius: 50%; /* Mantém o formato circular */
+    border: 3px solid #FEEADF; /* Borda ao redor da imagem */
+    box-shadow: 0px 20px 20px rgba(241, 164, 164, 0.2); /* Sombra para destacar a imagem */
+    margin-right: 80px; /* Espaço entre a imagem e o texto */
+    float: left; /* Posiciona a imagem à esquerda do texto */
     object-fit: cover; /* Ajusta a imagem ao contêiner sem distorção */
     object-position: center; /* Centraliza a imagem dentro do círculo */
-    margin-left: 10px; /* Recuo maior para o canto esquerdo */
-    margin-right: 100px; /* Espaço entre a imagem e o texto */
-    margin-bottom: 20px; /* Espaçamento inferior */
-    float: left; /* Posiciona a imagem à esquerda */
+    margin-top: 30px;
 }
 
+.texto-sobre-mim {
+    margin: 0 20px; /* Espaçamento entre o texto e os ícones */ 
+}
 
 /* Estilo dos ícones decorativos */
 .icons {
@@ -215,7 +204,7 @@ footer {
 
 
 
-#light-container {
+#feixes-de-luz {
     position: absolute;
     top: 0;
     left: 0;
@@ -225,7 +214,7 @@ footer {
     z-index: -1; /* Garante que os feixes fiquem atrás do conteúdo */
 }
 
-.light {
+.luz {
     position: absolute;
     width: 100px; /* Tamanho do feixe */
     height: 100px;
