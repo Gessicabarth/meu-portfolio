@@ -143,6 +143,60 @@ section#sobre-mim ul li {
     line-height: 1.2; /* Reduz o espaçamento entre as linhas */
 }
 
+/* Estilo da seção de curiosidades */
+#curiosidades {
+    background: linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4); /* Gradiente de fundo */
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaçamento acima da seção */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar a seção */
+}
+
+/* Contêiner para os itens de curiosidades */
+.curiosidades-container {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px; /* Espaçamento acima dos itens */
+}
+
+/* Estilo de cada curiosidade */
+.curiosidade-item {
+    background-color: var(--footer-bg); /* Fundo branco para contraste */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    width: 250px; /* Largura fixa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+    text-align: center; /* Centraliza o conteúdo dentro do item */
+}
+
+/* Efeito ao passar o mouse */
+.curiosidade-item:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Estilo das imagens das curiosidades */
+.curiosidade-item img {
+    width: 50px; /* Tamanho das imagens */
+    height: 50px; /* Tamanho das imagens */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+/* Texto das curiosidades */
+.curiosidade-item p {
+    font-size: 16px; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+}
+
+.texto-sobre-mim {
+    margin: 0 20px; /* Espaçamento entre o texto e os ícones */ 
+}
+
 /* Estilo da foto de perfil */
 .foto-perfil {
     width: 290px; /* Aumenta a largura do círculo */
@@ -157,24 +211,21 @@ section#sobre-mim ul li {
     margin-top: 30px;
 }
 
-.texto-sobre-mim {
-    margin: 0 20px; /* Espaçamento entre o texto e os ícones */ 
-}
 
 /* Estilo dos ícones decorativos */
 .icons {
     position: absolute; /* Posicionamento relativo ao contêiner pai */
-    top: 70%; /* Aumenta a distância do topo para criar mais espaço */
+    top: 60%; /* Aumenta a distância do topo para criar mais espaço */
     right: 100px; /* Distância da borda direita */
     transform: translateY(-50%); /* Ajusta o alinhamento vertical */
     display: flex; /* Exibe os ícones em coluna */
     flex-direction: column;
-    gap: 70px; /* Espaçamento entre os ícones */
+    gap: 150px; /* Espaçamento entre os ícones */
 }
 
 .icons img {
-    width: 40px; /* Largura dos ícones */
-    height: 40px; /* Altura dos ícones */
+    width: 50px; /* Largura dos ícones */
+    height: 50px; /* Altura dos ícones */
     color: var(--icon-color); /* Cor dos ícones */
     opacity: 0.9; /* Transparência inicial */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Animação suave */
