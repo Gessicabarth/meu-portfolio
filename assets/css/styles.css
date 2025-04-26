@@ -119,6 +119,10 @@ section#sobre-mim h1 {
     text-shadow: 2px 2px 4px rgba(70, 34, 34, 0.3); /* Sombra leve para destacar o texto */
 }
 
+.texto-sobre-mim {
+    margin: 0 20px; /* Espaçamento entre o texto e os ícones */ 
+}
+
 /* Texto da seção - paragrafo */
 section#sobre-mim p {
     font-size: 1.1rem; /* Ajusta o tamanho da fonte */
@@ -191,9 +195,7 @@ section#sobre-mim ul li {
     line-height: 1.5; /* Espaçamento entre as linhas */
 }
 
-.texto-sobre-mim {
-    margin: 0 20px; /* Espaçamento entre o texto e os ícones */ 
-}
+
 
 /* Estilo da foto de perfil */
 .foto-perfil {
@@ -213,25 +215,30 @@ section#sobre-mim ul li {
 /* Estilo dos ícones decorativos */
 .icons {
     position: absolute; /* Posicionamento relativo ao contêiner pai */
-    top: 60%; /* Aumenta a distância do topo para criar mais espaço */
+    top: 70%; /* Aumenta a distância do topo para criar mais espaço */
     right: 100px; /* Distância da borda direita */
     transform: translateY(-50%); /* Ajusta o alinhamento vertical */
-    display: flex; /* Exibe os ícones em coluna */
-    flex-direction: column;
+    display: flex; /* Exibe os ícones em linha */
+    flex-direction: column; /* Organiza os ícones em coluna */
     gap: 150px; /* Espaçamento entre os ícones */
 }
 
 .icons img {
-    width: 50px; /* Largura dos ícones */
-    height: 50px; /* Altura dos ícones */
+    width: 70px; /* Largura dos ícones */
+    height: 70px; /* Altura dos ícones */
     color: var(--icon-color); /* Cor dos ícones */
     opacity: 0.9; /* Transparência inicial */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Animação suave */
+    border-radius: 50%; /* Torna os ícones circulares */
+    background-color: var(--footer-bg); /* Fundo branco para contraste */
+    padding: 10px; /* Espaçamento interno para criar o efeito de contêiner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar os ícones */
 }
 
 .icons img:hover {
     transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
     opacity: 1; /* Remove a transparência */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
 }
 
 /* Estilo do rodapé */
