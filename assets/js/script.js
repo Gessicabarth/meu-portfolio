@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const feixesDeLuz = document.getElementById("feixes-de-luz");
-    const totalEstrelas = 200; // Número total de estrelas
+    const totalEstrelas = 400; // Número total de estrelas
 
     for (let i = 0; i < totalEstrelas; i++) {
         const estrela = document.createElement("div");
