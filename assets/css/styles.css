@@ -270,30 +270,38 @@ footer {
     height: 100%;
     pointer-events: none;
     z-index: -1;
+    overflow: hidden; /* Garante que os brilhos não ativem barras de rolagem */
 }
 
 /* Estilo individual dos feixes de luz */
 .luz {
     position: absolute;
-    width: 100px; /* Tamanho do feixe */
-    height: 100px;
-    background-image: url('../icons/brilho.png'); /* Caminho para a imagem do feixe */
+    width: 13px; /* Tamanho do brilho */
+    height: 13px;
+    background-image: url('../icons/brilho.png');
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.6; /* Torna o feixe mais sutil */
-    animation: float 10s infinite ease-in-out; /* Animação suave */
+    pointer-events: none;
+    opacity: 0.6;
+    animation: float 30s infinite ease-in-out;
 }
 
 
 /* Animação para os feixes flutuarem */
 @keyframes float {
     0% {
-        transform: translateY(0) scale(1);
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(-10px, -20px) scale(1.1);
     }
     50% {
-        transform: translateY(-20px) scale(1.1);
+        transform: translate(20px, 10px) scale(0.9);
+    }
+    75% {
+        transform: translate(-15px, 15px) scale(1.05);
     }
     100% {
-        transform: translateY(0) scale(1);
+        transform: translate(0, 0) scale(1);
     }
 }
