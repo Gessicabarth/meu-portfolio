@@ -1,6 +1,7 @@
 /* Importando fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
 
 /* Reset básico para remover margens e espaçamentos padrão */
 * {
@@ -42,12 +43,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: relative; 
 }
 
 /* Estilo do contêiner principal */
 main {
-    flex: 1;
+    flex: 1;/* Permite que o contêiner principal ocupe o espaço restante da tela */
 }
 
 /* Estilo do cabeçalho */
@@ -66,13 +67,13 @@ header {
     display: flex;
 }
 
-/* Estilo do menu de navegação */
+/* Estilo do menu de navegação - cabeçalho*/
 nav {
     display: flex;
     margin-left: 50px;
 }
 
-/* Estilo dos links do menu */
+/* Estilo dos links do menu - cabeçalho */
 nav a {
     text-decoration: none;
     color: var(--menu-text);
@@ -88,7 +89,7 @@ nav a {
     box-sizing: border-box; /* Garante que padding e border sejam incluídos no tamanho total */
 }
 
-/* Estilo do link ao passar o mouse ou quando ativo */
+/* Estilo do link ao passar o mouse ou quando ativo - cabeçalho */
 nav a:hover,
 nav a.active {
     background-color: var(--color-Background-menu-select);
@@ -98,10 +99,11 @@ nav a.active {
     align-items: center; /* Centraliza verticalmente o texto */
     justify-content: center; /* Centraliza horizontalmente o texto */
     box-sizing: border-box; /* Garante consistência no tamanho */
+  
 }
 
 
-/* Estilo do último link do menu */
+/* Estilo do último link do menu - cabeçalho */
 nav a:last-child {
     margin-right: 0; 
 }
@@ -111,7 +113,7 @@ nav a:last-child {
 section#sobre-mim {
     text-align: justify;
     padding: 20px 50px;
-    margin: 60px 60px;
+    margin: 60px auto;
     width: 80%;
     line-height: 1.8;
     background-color: var(--footer-bg);
@@ -139,12 +141,57 @@ section#sobre-mim h1 {
     font-weight: 400;
 }
 
+/* Estilo dos subtítulos */
+h2 {
+    font-family: 'Playfair Display', serif; /* Define a fonte Playfair Display */
+    font-size: 1.6rem; /* Ajuste o tamanho conforme necessário */
+    font-weight: 600; /* Define o peso da fonte */
+    color: #5A2A27; /* Usa a cor definida nas variáveis */
+    margin-bottom: 10px; /* Espaçamento abaixo do subtítulo */
+}
+
 /* Estilo do parágrafo da seção "Sobre Mim" */
 section#sobre-mim p {
     font-size: 1.0rem;
     line-height: 2;
     margin: 0;
     color: var(--text-color);
+}
+
+
+/* Estilo para organizar os textos "Meus hobbies" e "Minhas paixões" */
+.hobbies-paixoes {
+    display: flex; /* Usa Flexbox para organizar os elementos lado a lado */
+    justify-content: space-between; /* Espaça os elementos igualmente */
+    gap: 50px; /* Espaçamento entre os elementos */
+    margin-top: 20px; /* Espaçamento acima do contêiner */
+}
+
+/* Estilo das colunas "Meus hobbies" e "Minhas paixões" */
+.hobbies, .paixoes {
+    width: 48%; /* Cada coluna ocupa 48% da largura do contêiner */
+    margin-top: 30px; /* Adiciona mais espaçamento acima do texto */
+}
+
+/* Estilo do título da seção "Meus hobbies" */
+.hobbies h2, .paixoes h2 {
+    text-align: left; /* Alinha os títulos à esquerda */
+}
+
+/* Estilo dos parágrafos e listas dentro das seções "Meus hobbies" e "Minhas paixões" */
+.hobbies p, .paixoes ul {
+    text-align: justify; /* Justifica o texto */
+}
+
+/** Estilo dos parágrafos dentro da seção "Meus hobbies" */
+.paixoes ul, .paixoes ul li {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--text-color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: justify !important;
 }
 
 /* Estilo da lista de curiosidades */
@@ -221,43 +268,11 @@ section#sobre-mim ul li {
     border-radius: 50%;
     border: 3px solid #FEEADF;
     box-shadow: 0px 20px 20px rgba(241, 164, 164, 0.2);
-    margin-right: 80px;
+    margin-right: 50px;
     float: left;
     object-fit: cover;
     object-position: center;
     margin-top: 30px;
-}
-
-
-/* Estilo dos ícones decorativos */
-.icons {
-    position: absolute;
-    top: 70%;
-    right: 100px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
-}
-
-/* Estilo dos ícones */
-.icons img {
-    width: 70px;
-    height: 70px;
-    color: var(--icon-color);
-    opacity: 0.9;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    border-radius: 50%;
-    background-color: var(--footer-bg);
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Efeito ao passar o mouse nos ícones */
-.icons img:hover {
-    transform: scale(1.2);
-    opacity: 1;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo do rodapé */
