@@ -43,7 +43,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative; 
+    position: relative;
 }
 
 /* Estilo do contêiner principal */
@@ -54,15 +54,15 @@ main {
 /* Estilo do cabeçalho */
 /* O cabeçalho é posicionado no topo da página e tem um fundo semi-transparente */
 header {
-    position: relative; 
-    top: 15px; 
+    position: relative;
+    top: 15px;
     background-color: var(--menu-bg);
     padding: 10px 20px;
-    border-radius: 15px; 
+    border-radius: 15px;
     margin: 10px 20px 15px 40px;
-    max-width: 1200px; 
-    width: calc(100% - 100px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 1200px;
+    width: calc(100% - 100px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
 }
@@ -99,13 +99,13 @@ nav a.active {
     align-items: center; /* Centraliza verticalmente o texto */
     justify-content: center; /* Centraliza horizontalmente o texto */
     box-sizing: border-box; /* Garante consistência no tamanho */
-  
+
 }
 
 
 /* Estilo do último link do menu - cabeçalho */
 nav a:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 
