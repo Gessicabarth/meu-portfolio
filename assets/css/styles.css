@@ -48,7 +48,8 @@ body {
 
 /* Estilo do contêiner principal */
 main {
-    flex: 1;/* Permite que o contêiner principal ocupe o espaço restante da tela */
+    flex: 1;
+    /* Permite que o contêiner principal ocupe o espaço restante da tela */
 }
 
 /* Estilo do cabeçalho */
@@ -71,6 +72,11 @@ header {
 nav {
     display: flex;
     margin-left: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilo dos links do menu - cabeçalho */
@@ -79,14 +85,16 @@ nav a {
     color: var(--menu-text);
     font-size: 1.1rem;
     font-weight: 400;
-    padding: 8px 70px;
+    padding: 8px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 0 15px; /* Define espaçamento igual entre os links */
-    display: inline-block;
-    align-items: center; /* Centraliza verticalmente o texto */
-    justify-content: center; /* Centraliza horizontalmente o texto */
-    box-sizing: border-box; /* Garante que padding e border sejam incluídos no tamanho total */
+    margin: 0;
+    /* Define espaçamento igual entre os links */
+    display: inline-flex;
+    align-items: center;
+    /* Centraliza verticalmente o texto */
+    box-sizing: border-box;
+    /* Garante que padding e border sejam incluídos no tamanho total */
 }
 
 /* Estilo do link ao passar o mouse ou quando ativo - cabeçalho */
@@ -94,14 +102,17 @@ nav a:hover,
 nav a.active {
     background-color: var(--color-Background-menu-select);
     color: #FFFFFF;
-    padding: 8px 70px; /* Garante que o tamanho do fundo permaneça consistente */
-    display: inline-block; /* Garante que o link seja tratado como um bloco para o padding */
-    align-items: center; /* Centraliza verticalmente o texto */
-    justify-content: center; /* Centraliza horizontalmente o texto */
-    box-sizing: border-box; /* Garante consistência no tamanho */
-
+    box-sizing: border-box;
 }
 
+/* Estilo para os ícones dentro dos links */
+nav a img.icon {
+    width: 20px;
+    /* Ajuste o tamanho do ícone */
+    height: 20px;
+    margin-right: 8px;
+    /* Espaço entre o ícone e o texto */
+}
 
 /* Estilo do último link do menu - cabeçalho */
 nav a:last-child {
@@ -143,11 +154,16 @@ section#sobre-mim h1 {
 
 /* Estilo dos subtítulos */
 h2 {
-    font-family: 'Playfair Display', serif; /* Define a fonte Playfair Display */
-    font-size: 1.6rem; /* Ajuste o tamanho conforme necessário */
-    font-weight: 600; /* Define o peso da fonte */
-    color: #5A2A27; /* Usa a cor definida nas variáveis */
-    margin-bottom: 10px; /* Espaçamento abaixo do subtítulo */
+    font-family: 'Playfair Display', serif;
+    /* Define a fonte Playfair Display */
+    font-size: 1.6rem;
+    /* Ajuste o tamanho conforme necessário */
+    font-weight: 600;
+    /* Define o peso da fonte */
+    color: #5A2A27;
+    /* Usa a cor definida nas variáveis */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do subtítulo */
 }
 
 /* Estilo do parágrafo da seção "Sobre Mim" */
@@ -161,30 +177,45 @@ section#sobre-mim p {
 
 /* Estilo para organizar os textos "Meus hobbies" e "Minhas paixões" */
 .hobbies-paixoes {
-    display: flex; /* Usa Flexbox para organizar os elementos lado a lado */
-    justify-content: space-between; /* Espaça os elementos igualmente */
-    gap: 50px; /* Espaçamento entre os elementos */
-    margin-top: 20px; /* Espaçamento acima do contêiner */
+    display: flex;
+    /* Usa Flexbox para organizar os elementos lado a lado */
+    justify-content: space-between;
+    /* Espaça os elementos igualmente */
+    gap: 50px;
+    /* Espaçamento entre os elementos */
+    margin-top: 20px;
+    /* Espaçamento acima do contêiner */
 }
 
 /* Estilo das colunas "Meus hobbies" e "Minhas paixões" */
-.hobbies, .paixoes {
-    width: 48%; /* Cada coluna ocupa 48% da largura do contêiner */
-    margin-top: 30px; /* Adiciona mais espaçamento acima do texto */
+.hobbies,
+.paixoes {
+    width: 48%;
+    /* Cada coluna ocupa 48% da largura do contêiner */
+    margin-top: 30px;
+    /* Adiciona mais espaçamento acima do texto */
 }
 
 /* Estilo do título da seção "Meus hobbies" */
-.hobbies h2, .paixoes h2 {
-    text-align: left; /* Alinha os títulos à esquerda */
+.hobbies h2,
+.paixoes h2 {
+    text-align: left;
+    /* Alinha os títulos à esquerda */
 }
 
 .paixoes p {
-    font-size: 1rem; /* Tamanho da fonte */
-    line-height: 1.8; /* Altura da linha */
-    font-family: 'Montserrat', sans-serif; /* Fonte */
-    color: var(--text-color); /* Cor do texto */
-    text-align: justify; /* Justifica o texto */
-    margin: 0; /* Remove margens extras */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.8;
+    /* Altura da linha */
+    font-family: 'Montserrat', sans-serif;
+    /* Fonte */
+    color: var(--text-color);
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+    margin: 0;
+    /* Remove margens extras */
 }
 
 /* Estilo da lista de curiosidades */
@@ -353,15 +384,18 @@ footer {
     nav a {
         text-decoration: none;
         color: var(--menu-text);
-        font-size: 1.3rem; /* Sobrescreve o tamanho da fonte */
+        font-size: 1.3rem;
+        /* Sobrescreve o tamanho da fonte */
         font-weight: 400;
-        padding: 10px 90px; /* Ajusta o espaçamento interno */
+        padding: 10px 90px;
+        /* Ajusta o espaçamento interno */
         border-radius: 5px;
         transition: background-color 0.3s ease, color 0.3s ease;
-        margin: 0 35px; /* Espaçamento entre os links */
-        display: inline-block;
+        margin: 0 35px;
+        /* Espaçamento entre os links */
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         box-sizing: border-box;
     }
 
@@ -369,12 +403,14 @@ footer {
     nav a.active {
         background-color: var(--color-Background-menu-select);
         color: #FFFFFF;
-        padding: 10px 90px; /* Garante consistência no hover */
-        display: inline-block;
+        padding: 10px 90px;
+        /* Garante consistência no hover */
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
     }
+
 
     section#sobre-mim {
         width: 70%;
@@ -392,28 +428,39 @@ footer {
         margin-right: 60px;
     }
 
-        /* Estilo para organizar os textos "Meus hobbies" e "Minhas paixões" */
+    /* Estilo para organizar os textos "Meus hobbies" e "Minhas paixões" */
     .hobbies-paixoes {
-        display: flex; /* Usa Flexbox para organizar os elementos lado a lado */
-        justify-content: space-between; /* Espaça os elementos igualmente */
-        gap: 50px; /* Espaçamento entre os elementos */
-        margin-top: 20px; /* Espaçamento acima do contêiner */
+        display: flex;
+        /* Usa Flexbox para organizar os elementos lado a lado */
+        justify-content: space-between;
+        /* Espaça os elementos igualmente */
+        gap: 50px;
+        /* Espaçamento entre os elementos */
+        margin-top: 20px;
+        /* Espaçamento acima do contêiner */
     }
 
     /* Estilo das colunas "Meus hobbies" e "Minhas paixões" */
-    .hobbies, .paixoes {
-        width: 48%; /* Cada coluna ocupa 48% da largura do contêiner */
-        margin-top: 30px; /* Adiciona mais espaçamento acima do texto */
+    .hobbies,
+    .paixoes {
+        width: 48%;
+        /* Cada coluna ocupa 48% da largura do contêiner */
+        margin-top: 30px;
+        /* Adiciona mais espaçamento acima do texto */
     }
 
     /* Estilo do título da seção "Meus hobbies" */
-    .hobbies h2, .paixoes h2 {
-        text-align: left; /* Alinha os títulos à esquerda */
+    .hobbies h2,
+    .paixoes h2 {
+        text-align: left;
+        /* Alinha os títulos à esquerda */
     }
 
     /* Estilo dos parágrafos e listas dentro das seções "Meus hobbies" e "Minhas paixões" */
-    .hobbies p, .paixoes ul {
-        text-align: justify; /* Justifica o texto */
+    .hobbies p,
+    .paixoes ul {
+        text-align: justify;
+        /* Justifica o texto */
     }
 
     .curiosidade-item {
@@ -474,7 +521,8 @@ footer {
         gap: 20px;
     }
 
-    .hobbies, .paixoes {
+    .hobbies,
+    .paixoes {
         width: 100%;
     }
 
