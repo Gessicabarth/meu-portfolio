@@ -112,6 +112,8 @@ nav a img.icon {
     height: 20px;
     margin-right: 8px;
     /* Espaço entre o ícone e o texto */
+    object-fit: contain;
+    /* Garante que a imagem seja ajustada sem distorção */
 }
 
 /* Estilo do último link do menu - cabeçalho */
@@ -490,6 +492,7 @@ footer {
     nav {
         flex-direction: column;
         margin-left: 0;
+        display: none;
     }
 
     nav a {
@@ -499,19 +502,19 @@ footer {
     }
 
     section#sobre-mim {
-        width: 90%;
+        width: 80%;
         padding: 20px;
         margin: 50px auto;
     }
 
     section#sobre-mim h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         text-align: center;
     }
 
     .foto-perfil {
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
         margin: 0 auto 20px;
         float: none;
     }
@@ -535,4 +538,93 @@ footer {
         width: 50px;
         height: 50px;
     }
+
+    /* Botão do menu sanduíche */
+    .menu-toggle {
+        display: block;
+        /* Exibe o botão apenas em telas menores */
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+    .menu-toggle .hamburger {
+        width: 30px;
+        height: 3px;
+        background-color: var(--menu-text);
+        position: relative;
+        display: block;
+    }
+
+    .menu-toggle .hamburger::before,
+    .menu-toggle .hamburger::after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: var(--menu-text);
+        position: absolute;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    .menu-toggle .hamburger::before {
+        top: -8px;
+    }
+
+    .menu-toggle .hamburger::after {
+        top: 8px;
+    }
+
+    /* Esconde o menu por padrão */
+    .menu {
+        display: none;
+        /* Esconde o menu inicialmente */
+        flex-direction: column;
+        background-color: var(--menu-bg);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu a {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        color: var(--menu-text);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu a img.icon {
+        margin-right: 8px;
+        width: 19px;
+        height: 19px;
+    }
+
+    /* Ajusta o tamanho apenas do ícone do portfólio */
+    .menu a[href="portifolio.html"] img.icon {
+        width: 22px;
+        /* Ajuste o tamanho desejado */
+        height: 22px;
+        /* Ajuste o tamanho desejado */
+    }
+
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* Exibe o menu quando aberto */
+    .menu.open {
+        display: flex;
+    }
+
 }

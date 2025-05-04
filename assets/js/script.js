@@ -16,3 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
         feixesDeLuz.appendChild(estrela);
     }
 });
+
+// Código para o menu sanduíche
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    if (menuToggle && menu) {
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('open'); // Alterna a classe 'open'
+        });
+    }
+});
