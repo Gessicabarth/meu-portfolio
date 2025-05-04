@@ -93,7 +93,7 @@ nav a {
 nav a:hover,
 nav a.active {
     background-color: var(--color-Background-menu-select);
-    color: #fff;
+    color: #FFFFFF;
     padding: 8px 70px; /* Garante que o tamanho do fundo permaneça consistente */
     display: inline-block; /* Garante que o link seja tratado como um bloco para o padding */
     align-items: center; /* Centraliza verticalmente o texto */
@@ -248,7 +248,7 @@ section#sobre-mim ul li {
 /* Texto das curiosidades */
 .curiosidade-item p {
     font-size: 16px;
-    color: #333;
+    color: #333333;
     line-height: 1.5;
 }
 
@@ -368,7 +368,7 @@ footer {
     nav a:hover,
     nav a.active {
         background-color: var(--color-Background-menu-select);
-        color: #fff;
+        color: #FFFFFF;
         padding: 10px 90px; /* Garante consistência no hover */
         display: inline-block;
         align-items: center;
