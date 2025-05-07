@@ -1,0 +1,99 @@
+/* Responsividade para telas maiores que 1024px (ex.: 1920x1080) */
+header {
+    margin: 20px 40px 30px 80px;
+    max-width: 1700px;
+    width: calc(100% - 160px);
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--menu-text);
+    font-size: 1.3rem;
+    /* Sobrescreve o tamanho da fonte */
+    font-weight: 400;
+    padding: 10px 90px;
+    /* Ajusta o espaçamento interno */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 35px;
+    /* Espaçamento entre os links */
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--color-Background-menu-select);
+    color: #FFFFFF;
+    padding: 10px 90px;
+    /* Garante consistência no hover */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+section#sobre-mim {
+    width: 70%;
+    padding: 30px 60px;
+    margin: 80px auto;
+}
+
+section#sobre-mim h1 {
+    font-size: 5.5rem;
+}
+
+.foto-perfil {
+    width: 300px;
+    height: 300px;
+    margin-right: 60px;
+}
+
+/* Estilo para organizar os textos "Meus hobbies" e "Minhas paixões" */
+.hobbies-paixoes {
+    display: flex;
+    /* Usa Flexbox para organizar os elementos lado a lado */
+    justify-content: space-between;
+    /* Espaça os elementos igualmente */
+    gap: 50px;
+    /* Espaçamento entre os elementos */
+    margin-top: 20px;
+    /* Espaçamento acima do contêiner */
+}
+
+/* Estilo das colunas "Meus hobbies" e "Minhas paixões" */
+.hobbies,
+.paixoes {
+    width: 48%;
+    /* Cada coluna ocupa 48% da largura do contêiner */
+    margin-top: 30px;
+    /* Adiciona mais espaçamento acima do texto */
+}
+
+/* Estilo do título da seção "Meus hobbies" */
+.hobbies h2,
+.paixoes h2 {
+    text-align: left;
+    /* Alinha os títulos à esquerda */
+}
+
+/* Estilo dos parágrafos e listas dentro das seções "Meus hobbies" e "Minhas paixões" */
+.hobbies p,
+.paixoes ul {
+    text-align: justify;
+    /* Justifica o texto */
+}
+
+.curiosidade-item {
+    width: 300px;
+    padding: 30px;
+}
+
+.curiosidade-item img {
+    width: 60px;
+    height: 60px;
+}

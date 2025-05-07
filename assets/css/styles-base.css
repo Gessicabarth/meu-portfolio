@@ -60,20 +60,17 @@ header {
     background-color: var(--menu-bg);
     padding: 10px 20px;
     border-radius: 15px;
-    margin: 10px 20px 15px 40px;
-    max-width: 1200px;
-    width: calc(100% - 100px);
+    width: 80%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 /* Estilo do menu de navegação - cabeçalho*/
 nav {
     display: flex;
-    margin-left: 50px;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -85,16 +82,12 @@ nav a {
     color: var(--menu-text);
     font-size: 1.1rem;
     font-weight: 400;
-    padding: 8px 20px;
+    padding: 10px 5%;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 0;
-    /* Define espaçamento igual entre os links */
     display: inline-flex;
-    align-items: center;
-    /* Centraliza verticalmente o texto */
     box-sizing: border-box;
-    /* Garante que padding e border sejam incluídos no tamanho total */
+    white-space: nowrap;
 }
 
 /* Estilo do link ao passar o mouse ou quando ativo - cabeçalho */
@@ -116,12 +109,6 @@ nav a img.icon {
     /* Garante que a imagem seja ajustada sem distorção */
 }
 
-/* Estilo do último link do menu - cabeçalho */
-nav a:last-child {
-    margin-right: 0;
-}
-
-
 /* Estilo da seção "Sobre Mim" */
 section#sobre-mim {
     text-align: justify;
@@ -130,7 +117,7 @@ section#sobre-mim {
     width: 80%;
     line-height: 1.8;
     background-color: var(--footer-bg);
-    border-radius: 3%;
+    border-radius: 50px; /* Arredondamento mais suave */
 }
 
 /* Estilo do título da seção "Sobre Mim" */
@@ -139,7 +126,6 @@ section#sobre-mim h1 {
     font-size: 4.5rem;
     font-weight: 400;
     color: var(--title-color);
-    margin: 0;
     text-align: left;
     background: linear-gradient(to right, #E6B2BA, #5A2A27, #E6B2BA);
     background-clip: text;
@@ -172,7 +158,7 @@ h2 {
 section#sobre-mim p {
     font-size: 1.0rem;
     line-height: 2;
-    margin: 0;
+    margin: 0 0 10px 0;
     color: var(--text-color);
 }
 
@@ -185,7 +171,7 @@ section#sobre-mim p {
     /* Espaça os elementos igualmente */
     gap: 50px;
     /* Espaçamento entre os elementos */
-    margin-top: 20px;
+    margin-top: 10px;
     /* Espaçamento acima do contêiner */
 }
 
@@ -218,21 +204,6 @@ section#sobre-mim p {
     /* Justifica o texto */
     margin: 0;
     /* Remove margens extras */
-}
-
-/* Estilo da lista de curiosidades */
-section#sobre-mim ul {
-    margin-top: 15px;
-    padding-left: 0;
-    font-size: 1.1rem;
-    line-height: 1.2;
-}
-
-/* Estilo dos itens da lista de curiosidades */
-section#sobre-mim ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    line-height: 1.2;
 }
 
 /* Estilo da seção "Curiosidades" */
@@ -307,9 +278,8 @@ footer {
     color: var(--footer-text);
     text-align: center;
     padding: 15px 20px;
-    margin: 0;
-    position: relative;
-    left: 0;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     font-size: 0.9rem;
     z-index: 500;
@@ -367,264 +337,4 @@ footer {
     100% {
         transform: translate(0, 0) scale(1);
     }
-}
-
-
-
-
-
-
-/* Responsividade para telas maiores que 1366px (ex.: 1920x1080) */
-@media (min-width: 1367px) {
-    header {
-        margin: 20px 40px 30px 80px;
-        max-width: 1700px;
-        width: calc(100% - 160px);
-    }
-
-
-    nav a {
-        text-decoration: none;
-        color: var(--menu-text);
-        font-size: 1.3rem;
-        /* Sobrescreve o tamanho da fonte */
-        font-weight: 400;
-        padding: 10px 90px;
-        /* Ajusta o espaçamento interno */
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        margin: 0 35px;
-        /* Espaçamento entre os links */
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-evenly;
-        box-sizing: border-box;
-    }
-
-    nav a:hover,
-    nav a.active {
-        background-color: var(--color-Background-menu-select);
-        color: #FFFFFF;
-        padding: 10px 90px;
-        /* Garante consistência no hover */
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-
-
-    section#sobre-mim {
-        width: 70%;
-        padding: 30px 60px;
-        margin: 80px auto;
-    }
-
-    section#sobre-mim h1 {
-        font-size: 5.5rem;
-    }
-
-    .foto-perfil {
-        width: 300px;
-        height: 300px;
-        margin-right: 60px;
-    }
-
-    /* Estilo para organizar os textos "Meus hobbies" e "Minhas paixões" */
-    .hobbies-paixoes {
-        display: flex;
-        /* Usa Flexbox para organizar os elementos lado a lado */
-        justify-content: space-between;
-        /* Espaça os elementos igualmente */
-        gap: 50px;
-        /* Espaçamento entre os elementos */
-        margin-top: 20px;
-        /* Espaçamento acima do contêiner */
-    }
-
-    /* Estilo das colunas "Meus hobbies" e "Minhas paixões" */
-    .hobbies,
-    .paixoes {
-        width: 48%;
-        /* Cada coluna ocupa 48% da largura do contêiner */
-        margin-top: 30px;
-        /* Adiciona mais espaçamento acima do texto */
-    }
-
-    /* Estilo do título da seção "Meus hobbies" */
-    .hobbies h2,
-    .paixoes h2 {
-        text-align: left;
-        /* Alinha os títulos à esquerda */
-    }
-
-    /* Estilo dos parágrafos e listas dentro das seções "Meus hobbies" e "Minhas paixões" */
-    .hobbies p,
-    .paixoes ul {
-        text-align: justify;
-        /* Justifica o texto */
-    }
-
-    .curiosidade-item {
-        width: 300px;
-        padding: 30px;
-    }
-
-    .curiosidade-item img {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-
-
-
-
-/* Responsividade para telas menores que 768px (dispositivos móveis) */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 20px;
-        width: calc(100% - 40px);
-    }
-
-    nav {
-        flex-direction: column;
-        margin-left: 0;
-        display: none;
-    }
-
-    nav a {
-        font-size: 1rem;
-        padding: 8px 20px;
-        margin: 5px 0;
-    }
-
-    section#sobre-mim {
-        width: 80%;
-        padding: 20px;
-        margin: 50px auto;
-    }
-
-    section#sobre-mim h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .foto-perfil {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto 20px;
-        float: none;
-    }
-
-    .hobbies-paixoes {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .hobbies,
-    .paixoes {
-        width: 100%;
-    }
-
-    .curiosidade-item {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .curiosidade-item img {
-        width: 50px;
-        height: 50px;
-    }
-
-    /* Botão do menu sanduíche */
-    .menu-toggle {
-        display: block;
-        /* Exibe o botão apenas em telas menores */
-        background: none;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        z-index: 1001;
-    }
-
-    .menu-toggle .hamburger {
-        width: 30px;
-        height: 3px;
-        background-color: var(--menu-text);
-        position: relative;
-        display: block;
-    }
-
-    .menu-toggle .hamburger::before,
-    .menu-toggle .hamburger::after {
-        content: '';
-        width: 30px;
-        height: 3px;
-        background-color: var(--menu-text);
-        position: absolute;
-        left: 0;
-        transition: 0.3s;
-    }
-
-    .menu-toggle .hamburger::before {
-        top: -8px;
-    }
-
-    .menu-toggle .hamburger::after {
-        top: 8px;
-    }
-
-    /* Esconde o menu por padrão */
-    .menu {
-        display: none;
-        /* Esconde o menu inicialmente */
-        flex-direction: column;
-        background-color: var(--menu-bg);
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
-
-    .menu a {
-        padding: 10px;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-        color: var(--menu-text);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-    }
-
-    .menu a img.icon {
-        margin-right: 8px;
-        width: 19px;
-        height: 19px;
-    }
-
-    /* Ajusta o tamanho apenas do ícone do portfólio */
-    .menu a[href="portifolio.html"] img.icon {
-        width: 22px;
-        /* Ajuste o tamanho desejado */
-        height: 22px;
-        /* Ajuste o tamanho desejado */
-    }
-
-    .menu a:last-child {
-        border-bottom: none;
-    }
-
-    /* Exibe o menu quando aberto */
-    .menu.open {
-        display: flex;
-    }
-
 }
