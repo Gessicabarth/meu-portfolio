@@ -278,7 +278,7 @@ footer {
     color: var(--footer-text);
     text-align: center;
     padding: 15px 20px;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
     font-size: 0.9rem;
