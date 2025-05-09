@@ -122,7 +122,7 @@ section#sobre-mim {
 
 /* Estilo do título da seção "Sobre Mim" */
 section#sobre-mim h1 {
-    font-family: 'Dancing Script', sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-size: 4.5rem;
     font-weight: 400;
     color: var(--title-color);
