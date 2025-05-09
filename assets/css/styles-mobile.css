@@ -1,21 +1,26 @@
 /* Responsividade para telas menores que 768px (dispositivos móveis) */
 header {
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     margin: 10px 20px;
-    width: calc(100% - 40px);
+    width: 100%; /* Ajusta o tamanho do container */
 }
 
+
+/* Ajuste para organizar os links em duas linhas */
 nav {
-    flex-direction: column;
-    margin-left: 0;
-    display: none;
+    display: flex; /* Exibe os links em um layout flexível */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os links */
+    gap: 10px; /* Espaçamento entre os links */
 }
 
 nav a {
-    font-size: 1rem;
-    padding: 8px 20px;
-    margin: 5px 0;
+    flex: 1 1 45%; /* Cada link ocupa 45% da largura, ajustando para duas colunas */
+    text-align: center; /* Centraliza o texto dos links */
+    padding: 10px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
 }
 
 section#sobre-mim {
@@ -25,13 +30,17 @@ section#sobre-mim {
 }
 
 section#sobre-mim h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
+section#sobre-mim p {
+    font-size: 0.9rem;
+}
+
 .foto-perfil {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 20px;
     float: none;
 }
@@ -59,14 +68,14 @@ section#sobre-mim h1 {
 /* Botão do menu sanduíche */
 .menu-toggle {
     display: block;
-    /* Exibe o botão apenas em telas menores */
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: pointer;/* Muda o cursor para indicar que é clicável */
     position: absolute;
-    top: 15px;
-    right: 20px;
-    z-index: 1001;
+    top: 50%;/* Ajusta a posição do botão */
+    right: 20px;/* Ajusta a posição do botão */
+    transform: translateY(-50%);  /* Ajusta o alinhamento vertical */
+    z-index: 1001;/* Garante que o botão fique acima de outros elementos */
 }
 
 .menu-toggle .hamburger {
@@ -130,9 +139,7 @@ section#sobre-mim h1 {
 /* Ajusta o tamanho apenas do ícone do portfólio */
 .menu a[href="portifolio.html"] img.icon {
     width: 22px;
-    /* Ajuste o tamanho desejado */
     height: 22px;
-    /* Ajuste o tamanho desejado */
 }
 
 .menu a:last-child {
@@ -143,3 +150,4 @@ section#sobre-mim h1 {
 .menu.open {
     display: flex;
 }
+

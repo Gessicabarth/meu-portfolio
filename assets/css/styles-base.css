@@ -60,7 +60,7 @@ header {
     background-color: var(--menu-bg);
     padding: 10px 20px;
     border-radius: 15px;
-    width: 80%;
+    width: 85%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ nav a {
     color: var(--menu-text);
     font-size: 1.1rem;
     font-weight: 400;
-    padding: 10px 5%;
+    padding: 10px 2vw;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-flex;
@@ -114,7 +114,7 @@ section#sobre-mim {
     text-align: justify;
     padding: 20px 50px;
     margin: 60px auto;
-    width: 80%;
+    width: 75%;
     line-height: 1.8;
     background-color: var(--footer-bg);
     border-radius: 50px; /* Arredondamento mais suave */
