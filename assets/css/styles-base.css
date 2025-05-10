@@ -117,7 +117,8 @@ section#sobre-mim {
     width: 75%;
     line-height: 1.8;
     background-color: var(--footer-bg);
-    border-radius: 50px; /* Arredondamento mais suave */
+    border-radius: 50px;
+    /* Arredondamento mais suave */
 }
 
 /* Estilo do título da seção "Sobre Mim" */
@@ -337,4 +338,152 @@ footer {
     100% {
         transform: translate(0, 0) scale(1);
     }
+}
+
+
+
+
+/*Estilização do MAIN da página FORMAÇÃO*/
+
+.main-container {
+    text-align: justify;
+    padding: 20px 50px;
+    margin: 60px auto;
+    width: 75%;
+    /* Mesmo comprimento do "Sobre Mim" */
+    line-height: 1.8;
+    background-color: var(--footer-bg);
+    /* Fundo igual ao "Sobre Mim" */
+    border-radius: 50px;
+    /* Arredondamento suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para destacar o contêiner */
+}
+
+
+.cards-formacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cards-formacao ul {
+    padding-left: 2rem;
+    list-style-type: none;
+    /* Remove o estilo padrão */
+}
+
+.cards-formacao ul>li {
+    list-style-type: disc;
+    /* Marcador tipo ● para os títulos principais */
+    margin-bottom: 0.5rem;
+}
+
+.cards-formacao ul>li>ul {
+    padding-left: 1.5rem;
+    /* Indenta os subitens */
+}
+
+.cards-formacao ul>li>ul>li {
+    list-style-type: circle;
+    /* Marcador tipo "o" para os subitens */
+}
+
+.card {
+    background: #ffe7ea;
+    border: 1px solid #E6B2BA;
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(50, 28, 15, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Espaçamento maior entre a imagem e o título */
+.card img {
+    margin-bottom: 20px;
+    /* Ajuste o valor conforme necessário */
+}
+
+.card h2 {
+    color: #5A2A27;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.formacao-academica h2 {
+    margin-bottom: 15px;
+    /* Ajuste específico para este card */
+}
+
+.formacao-academica {
+    margin-top: 40px;
+    /* Aumente o valor para mais espaço */
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 2;
+    /* Ajusta a altura da linha para melhor legibilidade */
+    margin: 0 50px 0.35rem 0;
+    /* Adiciona espaçamento entre os parágrafos */
+    text-align: justify;
+    /* Justifica o texto para alinhamento uniforme */
+    text-indent: 1.5rem;
+    /* Recuo na primeira linha do parágrafo */
+}
+
+/* Estilo para o texto de detalhes do cargo */
+.cargo-detalhes {
+    display: block;
+    /* Garante que o texto fique em uma linha separada */
+    margin-bottom: 12px;
+    /* Espaçamento inferior */
+    line-height: 1.3;
+    /* Altura da linha para melhor legibilidade */
+}
+
+/* Espaçamento entre os itens da lista dentro dos cards */
+.card ul>li {
+    margin-bottom: 18px;
+    /* Espaçamento entre os títulos e o próximo conteúdo */
+}
+
+/* Remove o espaçamento extra entre subtítulos e outros elementos */
+.card ul>li>ul>li {
+    margin-bottom: 12px;
+    /* Espaçamento menor para subitens */
+}
+
+/* Espaçamento específico para o título "Estagiária de TI" */
+.card ul li strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(50, 28, 15, 0.2);
+}
+
+/* Espaçamento entre os itens da lista no card "Experiência Profissional" */
+.experiencia-profissional ul>li {
+    margin-bottom: 40px;
+    /* Espaçamento maior para este card */
+}
+
+/* Espaçamento entre os itens da lista no card "Formação Complementar" */
+.formacao-complementar ul>li {
+    margin-bottom: 40px;
+    /* Espaçamento maior para este card */
+}
+
+/* Espaçamento entre os itens da lista no card "Conhecimentos e Especializações" */
+.conhecimentos-especializacoes ul>li {
+    margin-bottom: 18px;
+    /* Espaçamento menor para este card */
 }
