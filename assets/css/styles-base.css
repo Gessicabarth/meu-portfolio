@@ -3,15 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
 
-/* Reset básico para remover margens e espaçamentos padrão */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Garante que padding e border sejam incluídos no tamanho total dos elementos */
 }
 
-/* Definindo variáveis de cores para facilitar a manutenção e consistência do design */
 :root {
     --background-gradient: repeating-linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
     --title-color: #E6B2BA;
@@ -25,7 +23,6 @@
     --footer-text: #321c0f;
 }
 
-/* Estilo do gradiente de fundo da página */
 html {
     height: 100%;
     background: var(--background-gradient);
@@ -33,7 +30,6 @@ html {
     background-size: cover;
 }
 
-/* Estilo do corpo da página */
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
@@ -46,14 +42,10 @@ body {
     position: relative;
 }
 
-/* Estilo do contêiner principal */
 main {
     flex: 1;
-    /* Permite que o contêiner principal ocupe o espaço restante da tela */
 }
 
-/* Estilo do cabeçalho */
-/* O cabeçalho é posicionado no topo da página e tem um fundo semi-transparente */
 header {
     position: relative;
     top: 15px;
@@ -67,7 +59,6 @@ header {
     margin: 0 auto;
 }
 
-/* Estilo do menu de navegação - cabeçalho*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -76,7 +67,6 @@ nav {
     padding: 0;
 }
 
-/* Estilo dos links do menu - cabeçalho */
 nav a {
     text-decoration: none;
     color: var(--menu-text);
@@ -90,7 +80,6 @@ nav a {
     white-space: nowrap;
 }
 
-/* Estilo do link ao passar o mouse ou quando ativo - cabeçalho */
 nav a:hover,
 nav a.active {
     background-color: var(--color-Background-menu-select);
@@ -98,18 +87,13 @@ nav a.active {
     box-sizing: border-box;
 }
 
-/* Estilo para os ícones dentro dos links */
 nav a img.icon {
     width: 20px;
-    /* Ajuste o tamanho do ícone */
     height: 20px;
     margin-right: 8px;
-    /* Espaço entre o ícone e o texto */
     object-fit: contain;
-    /* Garante que a imagem seja ajustada sem distorção */
 }
 
-/* Estilo da seção "Sobre Mim" */
 section#sobre-mim {
     text-align: justify;
     padding: 20px 50px;
@@ -118,10 +102,8 @@ section#sobre-mim {
     line-height: 1.8;
     background-color: var(--footer-bg);
     border-radius: 50px;
-    /* Arredondamento mais suave */
 }
 
-/* Estilo do título da seção "Sobre Mim" */
 section#sobre-mim h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 4.5rem;
@@ -135,27 +117,19 @@ section#sobre-mim h1 {
     text-shadow: 2px 2px 4px rgba(70, 34, 34, 0.3);
 }
 
-/* Estilo do subtítulo da seção "Sobre Mim" */
 .texto-sobre-mim {
     margin: 0 20px;
     font-weight: 400;
 }
 
-/* Estilo dos subtítulos */
 h2 {
     font-family: 'Playfair Display', serif;
-    /* Define a fonte Playfair Display */
     font-size: 1.6rem;
-    /* Ajuste o tamanho conforme necessário */
     font-weight: 600;
-    /* Define o peso da fonte */
     color: #5A2A27;
-    /* Usa a cor definida nas variáveis */
     margin-bottom: 10px;
-    /* Espaçamento abaixo do subtítulo */
 }
 
-/* Estilo do parágrafo da seção "Sobre Mim" */
 section#sobre-mim p {
     font-size: 1.0rem;
     line-height: 2;
@@ -164,50 +138,33 @@ section#sobre-mim p {
 }
 
 
-/* Estilo para organizar os textos "Meus hobbies" e "Minhas paixões" */
 .hobbies-paixoes {
     display: flex;
-    /* Usa Flexbox para organizar os elementos lado a lado */
     justify-content: space-between;
-    /* Espaça os elementos igualmente */
     gap: 50px;
-    /* Espaçamento entre os elementos */
     margin-top: 10px;
-    /* Espaçamento acima do contêiner */
 }
 
-/* Estilo das colunas "Meus hobbies" e "Minhas paixões" */
 .hobbies,
 .paixoes {
     width: 48%;
-    /* Cada coluna ocupa 48% da largura do contêiner */
     margin-top: 30px;
-    /* Adiciona mais espaçamento acima do texto */
 }
 
-/* Estilo do título da seção "Meus hobbies" */
 .hobbies h2,
 .paixoes h2 {
     text-align: left;
-    /* Alinha os títulos à esquerda */
 }
 
 .paixoes p {
     font-size: 1rem;
-    /* Tamanho da fonte */
     line-height: 1.8;
-    /* Altura da linha */
     font-family: 'Montserrat', sans-serif;
-    /* Fonte */
     color: var(--text-color);
-    /* Cor do texto */
     text-align: justify;
-    /* Justifica o texto */
     margin: 0;
-    /* Remove margens extras */
 }
 
-/* Estilo da seção "Curiosidades" */
 #curiosidades {
     background: linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
     padding: 40px 20px;
@@ -215,9 +172,9 @@ section#sobre-mim p {
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #A28C14;
 }
 
-/* Estilo do título da seção "Curiosidades" */
 .curiosidades-container {
     display: flex;
     justify-content: center;
@@ -226,7 +183,6 @@ section#sobre-mim p {
     margin-top: 40px;
 }
 
-/* Estilo dos itens de curiosidade */
 .curiosidade-item {
     background-color: var(--footer-bg);
     border-radius: 10px;
@@ -235,31 +191,26 @@ section#sobre-mim p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    border: 2px solid #A28C14;
 }
 
-/* Efeito ao passar o mouse */
 .curiosidade-item:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo das imagens das curiosidades */
 .curiosidade-item img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
 
-/* Texto das curiosidades */
 .curiosidade-item p {
     font-size: 16px;
     color: #333333;
     line-height: 1.5;
 }
 
-
-
-/* Estilo da foto de perfil */
 .foto-perfil {
     width: 290px;
     height: 290px;
@@ -273,7 +224,6 @@ section#sobre-mim p {
     margin-top: 30px;
 }
 
-/* Estilo do rodapé */
 footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
@@ -282,12 +232,11 @@ footer {
     position: static;
     bottom: 0;
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     z-index: 500;
     box-sizing: border-box;
 }
 
-/* Estilo dos feixes de luz decorativos */
 #feixes-de-luz {
     position: absolute;
     top: 0;
@@ -295,18 +244,14 @@ footer {
     width: 100%;
     height: 100%;
     min-height: 100%;
-    /* Garante que cubra a altura total do conteúdo */
     pointer-events: none;
     z-index: -1;
     overflow: hidden;
-    /* Garante que os brilhos não ativem barras de rolagem */
 }
 
-/* Estilo individual dos feixes de luz */
 .luz {
     position: absolute;
     width: 13px;
-    /* Tamanho do brilho */
     height: 13px;
     background-image: url('../icons/brilho.png');
     background-size: contain;
@@ -317,7 +262,6 @@ footer {
 }
 
 
-/* Animação para os feixes flutuarem */
 @keyframes float {
     0% {
         transform: translate(0, 0) scale(1);
@@ -350,14 +294,10 @@ footer {
     padding: 20px 50px;
     margin: 60px auto;
     width: 75%;
-    /* Mesmo comprimento do "Sobre Mim" */
     line-height: 1.8;
     background-color: var(--footer-bg);
-    /* Fundo igual ao "Sobre Mim" */
     border-radius: 50px;
-    /* Arredondamento suave */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra para destacar o contêiner */
 }
 
 
@@ -373,28 +313,24 @@ footer {
 .cards-formacao ul {
     padding-left: 2rem;
     list-style-type: none;
-    /* Remove o estilo padrão */
 }
 
 .cards-formacao ul>li {
     list-style-type: disc;
-    /* Marcador tipo ● para os títulos principais */
     margin-bottom: 0.5rem;
 }
 
 .cards-formacao ul>li>ul {
     padding-left: 1.5rem;
-    /* Indenta os subitens */
 }
 
 .cards-formacao ul>li>ul>li {
     list-style-type: circle;
-    /* Marcador tipo "o" para os subitens */
 }
 
 .card {
-    background: #ffe7ea;
-    border: 1px solid #E6B2BA;
+    background: linear-gradient(to bottom, #FEEADF, #ffe7ea, #fdeaec);
+    border: 1px solid #A28C14;
     border-radius: 12px;
     padding: 1.5rem;
     color: var(--text-color);
@@ -402,10 +338,8 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Espaçamento maior entre a imagem e o título */
 .card img {
     margin-bottom: 20px;
-    /* Ajuste o valor conforme necessário */
 }
 
 .card h2 {
@@ -416,49 +350,33 @@ footer {
 
 .formacao-academica h2 {
     margin-bottom: 15px;
-    /* Ajuste específico para este card */
 }
 
 .formacao-academica {
     margin-top: 40px;
-    /* Aumente o valor para mais espaço */
 }
 
 .card p {
     font-size: 1rem;
     line-height: 2;
-    /* Ajusta a altura da linha para melhor legibilidade */
     margin: 0 50px 0.35rem 0;
-    /* Adiciona espaçamento entre os parágrafos */
     text-align: justify;
-    /* Justifica o texto para alinhamento uniforme */
-    text-indent: 1.5rem;
-    /* Recuo na primeira linha do parágrafo */
 }
 
-/* Estilo para o texto de detalhes do cargo */
 .cargo-detalhes {
     display: block;
-    /* Garante que o texto fique em uma linha separada */
     margin-bottom: 12px;
-    /* Espaçamento inferior */
     line-height: 1.3;
-    /* Altura da linha para melhor legibilidade */
 }
 
-/* Espaçamento entre os itens da lista dentro dos cards */
 .card ul>li {
     margin-bottom: 18px;
-    /* Espaçamento entre os títulos e o próximo conteúdo */
 }
 
-/* Remove o espaçamento extra entre subtítulos e outros elementos */
 .card ul>li>ul>li {
     margin-bottom: 12px;
-    /* Espaçamento menor para subitens */
 }
 
-/* Espaçamento específico para o título "Estagiária de TI" */
 .card ul li strong {
     font-size: 1.1rem;
     display: block;
@@ -470,20 +388,196 @@ footer {
     box-shadow: 0 6px 14px rgba(50, 28, 15, 0.2);
 }
 
-/* Espaçamento entre os itens da lista no card "Experiência Profissional" */
 .experiencia-profissional ul>li {
     margin-bottom: 40px;
-    /* Espaçamento maior para este card */
 }
 
-/* Espaçamento entre os itens da lista no card "Formação Complementar" */
 .formacao-complementar ul>li {
     margin-bottom: 40px;
-    /* Espaçamento maior para este card */
 }
 
-/* Espaçamento entre os itens da lista no card "Conhecimentos e Especializações" */
 .conhecimentos-especializacoes ul>li {
     margin-bottom: 18px;
-    /* Espaçamento menor para este card */
+}
+
+
+
+
+
+/*Estilização do MAIN da página PORTFÓLIO*/
+
+
+
+
+
+
+
+
+/*Estilização do MAIN da página CONTATO*/
+
+.main-container {
+    text-align: justify;
+    padding: 20px 50px;
+    margin: 60px auto;
+    width: 75%;
+    line-height: 1.8;
+    background-color: var(--footer-bg);
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-contato {
+    background-color: rgba(255, 248, 246, 0.9);
+    padding: 50px 20px;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 60px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-contato {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--menu-text);
+}
+
+.bloco-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.card-contato {
+    flex: 1 1 45%;
+    background: linear-gradient(to bottom, #FEEADF, #ffe7ea, #fdeaec);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: var(--text-color);
+    border: 2px solid #A28C14;
+}
+
+.card-contato h3:first-of-type {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.card-contato h3:nth-of-type(2) {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.card-contato:hover {
+    transform: scale(1.01);
+}
+
+.card-contato a {
+    color: var(--footer-text);
+    text-decoration: none;
+}
+
+.card-contato label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+.card-contato input,
+.card-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #A28C14;
+    border-radius: 8px;
+    color: var(--text-color);
+    background-color: var(--footer-bg);
+    font-size: 1rem;
+}
+
+.card-contato input::placeholder,
+.card-contato textarea::placeholder {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-contato input:focus,
+.card-contato textarea:focus {
+    border: 3px solid #A28C14;
+    outline: none;
+    box-shadow: 0 0 10px rgba(162, 140, 20, 0.6);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-contato button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid #A28C14;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.card-contato button:hover {
+    background-color: #ffe7ea;
+}
+
+
+.botoes-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.botao-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid #A28C14;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    width: 200px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.botao-contato img {
+    width: 20px;
+    height: 20px;
+}
+
+.botao-contato:hover {
+    background-color: #FAD0C4;
+    color: var(--text-color);
+    border-color: #A28C14;
+    font-weight: 600;
 }
