@@ -94,7 +94,8 @@ nav a img.icon {
     object-fit: contain;
 }
 
-section#sobre-mim {
+
+.main-container {
     text-align: justify;
     padding: 20px 50px;
     margin: 60px auto;
@@ -289,17 +290,6 @@ footer {
 
 /*Estilização do MAIN da página FORMAÇÃO*/
 
-.main-container {
-    text-align: justify;
-    padding: 20px 50px;
-    margin: 60px auto;
-    width: 75%;
-    line-height: 1.8;
-    background-color: var(--footer-bg);
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 
 .cards-formacao {
     display: grid;
@@ -406,6 +396,63 @@ footer {
 
 /*Estilização do MAIN da página PORTFÓLIO*/
 
+.secao-projetos .subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-projeto {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+}
+
+.card-projeto img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-projeto h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.botao-link {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #8b2e5e;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.botao-link:hover {
+  background-color: #a03a6e;
+}
 
 
 
@@ -414,17 +461,6 @@ footer {
 
 
 /*Estilização do MAIN da página CONTATO*/
-
-.main-container {
-    text-align: justify;
-    padding: 20px 50px;
-    margin: 60px auto;
-    width: 75%;
-    line-height: 1.8;
-    background-color: var(--footer-bg);
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 .container-contato {
     background-color: rgba(255, 248, 246, 0.9);
