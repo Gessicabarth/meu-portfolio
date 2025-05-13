@@ -318,7 +318,7 @@ footer {
 }
 
 .card {
-    background: linear-gradient(to bottom, #FEEADF, #ffe7ea, #fdeaec);
+    background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
     border: 1px solid #A28C14;
     border-radius: 12px;
     padding: 1.5rem;
@@ -392,11 +392,12 @@ footer {
 
 
 
-
 /*Estilização do MAIN da página PORTFÓLIO*/
 
 .secao-projetos .subtitulo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: #5A2A27;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -404,56 +405,87 @@ footer {
 }
 
 .grid-projetos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reduza o tamanho mínimo para caber mais colunas */
+    gap: 2rem; /* Aumente o espaçamento entre os itens */
+    padding: 20px; /* Adicione um espaçamento interno ao grid */
+    border: 2;
 }
 
 .card-projeto {
-  background-color: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /* Adicione espaçamento interno */
+    border: 2px solid #A28C14; /* Adicione uma borda */
 }
 
 .card-projeto:hover {
-  transform: translateY(-5px);
+    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Destaque maior na sombra */
 }
 
 .card-projeto img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+    width: 100%;
+    height: 200px; /* Aumente a altura da imagem */
+    object-fit: cover;
+    border-bottom: 2px solid #ddd; /* Adicione uma borda inferior para separar a imagem */
 }
 
 .card-projeto h3 {
-  margin: 1rem 0 0.5rem;
-  font-size: 1.2rem;
-  color: #333;
-  text-align: center;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem; /* Aumente o tamanho do título */
+}
+
+
+.card-projeto h4 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem; /* Aumente o tamanho do título */
+    color: #321c0f;
+    text-align: center;
 }
 
 .botao-link {
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #8b2e5e;
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
+    margin-top: auto;
+    padding: 0.5rem 1.5rem;
+    background-color: #8b2e5e;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .botao-link:hover {
-  background-color: #a03a6e;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid #A28C14;
+    transition: transform 0.10s ease, box-shadow 0.10s ease;
 }
 
+.tags-tecnologias {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 
+.tags-tecnologias span {
+  background-color: #fff5f7;
+  color: #8b2e5e;
+  border: 1px solid #A28C14;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
 
 
 
@@ -486,7 +518,7 @@ footer {
 
 .card-contato {
     flex: 1 1 45%;
-    background: linear-gradient(to bottom, #FEEADF, #ffe7ea, #fdeaec);
+    background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
