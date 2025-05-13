@@ -395,20 +395,23 @@ footer {
 /*Estilização do MAIN da página PORTFÓLIO*/
 
 .secao-projetos .subtitulo {
-  font-size: 1.8rem;
-  font-family: 'Playfair Display', serif;
-  color: #5A2A27;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    color: #5A2A27;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .grid-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reduza o tamanho mínimo para caber mais colunas */
-    gap: 2rem; /* Aumente o espaçamento entre os itens */
-    padding: 20px; /* Adicione um espaçamento interno ao grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Reduza o tamanho mínimo para caber mais colunas */
+    gap: 2rem;
+    /* Aumente o espaçamento entre os itens */
+    padding: 20px;
+    /* Adicione um espaçamento interno ao grid */
     border: 2;
 }
 
@@ -421,31 +424,39 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem; /* Adicione espaçamento interno */
-    border: 2px solid #A28C14; /* Adicione uma borda */
+    padding: 1rem;
+    /* Adicione espaçamento interno */
+    border: 2px solid #A28C14;
+    /* Adicione uma borda */
 }
 
 .card-projeto:hover {
-    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Destaque maior na sombra */
+    transform: scale(1.05);
+    /* Aumenta levemente o tamanho ao passar o mouse */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    /* Destaque maior na sombra */
 }
 
 .card-projeto img {
     width: 100%;
-    height: 200px; /* Aumente a altura da imagem */
+    height: 200px;
+    /* Aumente a altura da imagem */
     object-fit: cover;
-    border-bottom: 2px solid #ddd; /* Adicione uma borda inferior para separar a imagem */
+    border-bottom: 2px solid #ddd;
+    /* Adicione uma borda inferior para separar a imagem */
 }
 
 .card-projeto h3 {
     margin: 1rem 0 0.5rem;
-    font-size: 1.5rem; /* Aumente o tamanho do título */
+    font-size: 1.5rem;
+    /* Aumente o tamanho do título */
 }
 
 
 .card-projeto h4 {
     margin: 1rem 0 0.5rem;
-    font-size: 1.5rem; /* Aumente o tamanho do título */
+    font-size: 1.5rem;
+    /* Aumente o tamanho do título */
     color: #321c0f;
     text-align: center;
 }
@@ -470,24 +481,82 @@ footer {
 }
 
 .tags-tecnologias {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .tags-tecnologias span {
-  background-color: #fff5f7;
-  color: #8b2e5e;
-  border: 1px solid #A28C14;
-  border-radius: 0.5rem;
-  padding: 0.3rem 0.7rem;
-  font-size: 0.8rem;
-  font-weight: 500;
+    background-color: #fff5f7;
+    color: #8b2e5e;
+    border: 1px solid #A28C14;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.secao-notion {
+    background: #fff5f7;
+    border: 2px dashed #A28C14;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 1rem 4rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(139, 46, 94, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+.secao-notion h3 {
+    font-size: 1.6rem;
+    color: #5A2A27;
+    margin-bottom: 0.5rem;
+}
+
+.secao-notion p {
+    font-size: 1.3rem;
+    color: #321c0f;
+    margin-bottom: 1.2rem;
+}
+
+.botao-notion {
+    padding: 0.8rem 1.5rem;
+    background-color: #8b2e5e;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+}
+
+.botao-notion:hover {
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid #A28C14;
+    font-weight: 600;
 }
 
 
+/* .botao-portfolio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b2e5e; 
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.botao-portfolio:hover {
+    background-color: #5a2a27;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+} */
 
 
 
@@ -545,11 +614,6 @@ footer {
     transform: scale(1.01);
 }
 
-.card-contato a {
-    color: var(--footer-text);
-    text-decoration: none;
-}
-
 .card-contato label {
     font-weight: bold;
     display: block;
@@ -592,21 +656,26 @@ footer {
     gap: 0.5rem;
     text-decoration: none;
     font-size: 1rem;
-    color: var(--text-color);
-    background-color: transparent;
-    border: 2px solid #A28C14;
+    color: #fff; /* Define o texto como branco antes da animação */
+    background-color: #8b2e5e; 
+    border: 2px solid transparent;
     border-radius: 8px;
     cursor: pointer;
     padding: 10px 25px;
     transition: all 0.3s ease;
     width: 150px;
     text-align: center;
-    font-weight: 600;
-    
+    font-weight: 500;
+
 }
 
 .card-contato button:hover {
-    background-color: #ffe7ea;
+    font-weight: 600;
+    color: var(--text-color); /* Cor do texto ao passar o mouse */
+    background-color: transparent;
+    border: 2px solid #A28C14; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -625,26 +694,27 @@ footer {
     gap: 0.5rem;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: bold;
-    color: var(--text-color);
-    background-color: transparent;
-    border: 2px solid #A28C14;
+    color: #fff; /* Define o texto como branco antes da animação */
+    background-color: #8b2e5e; 
+    border: 2px solid transparent;
     border-radius: 8px;
     padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    width: 200px;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    width: 200px; 
     text-align: center;
+    font-weight: 500;
+}
+
+.botao-contato:hover {
     font-weight: 600;
+    color: var(--text-color); /* Cor do texto ao passar o mouse */
+    background-color: transparent;
+    border: 2px solid #A28C14; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .botao-contato img {
     width: 20px;
     height: 20px;
-}
-
-.botao-contato:hover {
-    background-color: #FAD0C4;
-    color: var(--text-color);
-    border-color: #A28C14;
-    font-weight: 600;
 }
