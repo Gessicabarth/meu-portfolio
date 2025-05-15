@@ -3,13 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
 
-
+/* Reset básico: remove margens e paddings padrão de todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Definição de variáveis CSS globais para cores, gradientes e temas do site */
 :root {
     --background-gradient: repeating-linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
     --title-color: #E6B2BA;
@@ -23,6 +24,7 @@
     --footer-text: #321c0f;
 }
 
+/* Define altura total do html e aplica o gradiente de fundo fixo e cobrindo toda a tela */
 html {
     height: 100%;
     background: var(--background-gradient);
@@ -30,6 +32,7 @@ html {
     background-size: cover;
 }
 
+/* Estilização do body: define fonte padrão, cor do texto, remove margens, impede rolagem horizontal e configura layout flexível em coluna ocupando toda a altura da tela */
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
@@ -42,10 +45,12 @@ body {
     position: relative;
 }
 
+/* Faz o main ocupar todo o espaço disponível entre header e footer no layout flexível */
 main {
     flex: 1;
 }
 
+/* Estilização do header: posiciona, centraliza, aplica fundo, borda arredondada e sombra para destacar o menu */
 header {
     position: relative;
     top: 15px;
@@ -59,6 +64,7 @@ header {
     margin: 0 auto;
 }
 
+/* Estilização do menu de navegação: distribui os itens igualmente em linha e remove margens e paddings */
 nav {
     display: flex;
     justify-content: space-around;
@@ -67,6 +73,7 @@ nav {
     padding: 0;
 }
 
+/* Estilização dos links do menu de navegação: remove sublinhado, define cor, espaçamento, borda arredondada e transições suaves */
 nav a {
     text-decoration: none;
     color: var(--menu-text);
@@ -80,6 +87,7 @@ nav a {
     white-space: nowrap;
 }
 
+/* Destaca o link do menu de navegação ao passar o mouse ou quando ativo */
 nav a:hover,
 nav a.active {
     background-color: var(--color-Background-menu-select);
@@ -87,6 +95,7 @@ nav a.active {
     box-sizing: border-box;
 }
 
+/* Estilização dos ícones dentro dos links do menu de navegação */
 nav a img.icon {
     width: 20px;
     height: 20px;
@@ -94,7 +103,7 @@ nav a img.icon {
     object-fit: contain;
 }
 
-
+/* Estilização do container principal: define alinhamento, espaçamento, largura, cor de fundo e borda arredondada */
 .main-container {
     text-align: justify;
     padding: 20px 50px;
@@ -105,6 +114,7 @@ nav a img.icon {
     border-radius: 50px;
 }
 
+/* Estilização do título da seção "Sobre Mim": fonte cursiva, tamanho grande, gradiente no texto e sombra para destaque */
 section#sobre-mim h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 4.5rem;
@@ -118,11 +128,13 @@ section#sobre-mim h1 {
     text-shadow: 2px 2px 4px rgba(70, 34, 34, 0.3);
 }
 
+/* Estilização do texto da seção "Sobre Mim": define margens laterais e peso da fonte */
 .texto-sobre-mim {
     margin: 0 20px;
     font-weight: 400;
 }
 
+/* Estilização dos títulos h2: fonte serifada, tamanho, peso e cor personalizados */
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
@@ -131,6 +143,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Estilização dos parágrafos da seção "Sobre Mim": define tamanho da fonte, espaçamento entre linhas, margens e cor do texto */
 section#sobre-mim p {
     font-size: 1.0rem;
     line-height: 2;
@@ -138,7 +151,7 @@ section#sobre-mim p {
     color: var(--text-color);
 }
 
-
+/* Estilização do container de hobbies e paixões: exibe lado a lado com espaçamento e margem superior */
 .hobbies-paixoes {
     display: flex;
     justify-content: space-between;
@@ -146,17 +159,20 @@ section#sobre-mim p {
     margin-top: 10px;
 }
 
+/* Estilização das seções de hobbies e paixões: define largura e espaçamento superior */
 .hobbies,
 .paixoes {
     width: 48%;
     margin-top: 30px;
 }
 
+/* Alinha à esquerda os títulos h2 das seções de hobbies e paixões */
 .hobbies h2,
 .paixoes h2 {
     text-align: left;
 }
 
+/* Estilização dos parágrafos da seção "Paixões": define fonte, tamanho, cor, alinhamento e espaçamento */
 .paixoes p {
     font-size: 1rem;
     line-height: 1.8;
@@ -166,6 +182,7 @@ section#sobre-mim p {
     margin: 0;
 }
 
+/* Estilização da seção "Curiosidades": aplica gradiente de fundo, centraliza texto, define espaçamento, borda, sombra e arredondamento */
 #curiosidades {
     background: linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
     padding: 40px 20px;
@@ -177,6 +194,7 @@ section#sobre-mim p {
     font-size: 5px;
 }
 
+/* Estilização do Container das curiosidades: exibe itens lado a lado, centraliza, permite quebra de linha e define espaçamento */
 .curiosidades-container {
     display: flex;
     justify-content: center;
@@ -185,6 +203,7 @@ section#sobre-mim p {
     margin-top: 40px;
 }
 
+/* Estilização dos itens de curiosidades: fundo, borda arredondada, tamanho fixo, borda e transição de efeito */
 .curiosidade-item {
     background-color: var(--footer-bg);
     border-radius: 10px;
@@ -195,22 +214,26 @@ section#sobre-mim p {
     border: 2px solid #A28C14;
 }
 
+/* Efeito de destaque ao passar o mouse sobre os itens de curiosidades */
 .curiosidade-item:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilização das imagens nos itens de curiosidades: define tamanho e espaçamento inferior */
 .curiosidade-item img {
     width: 90px;
     height: 90px;
     margin-bottom: 8px;
 }
 
+/* Estilização dos parágrafos dentro dos itens de curiosidades: cor e espaçamento entre linhas */
 .curiosidade-item p {
     color: #333333;
     line-height: 1.5;
 }
 
+/* Estilização da foto de perfil: formato circular, borda, sombra, alinhamento à esquerda e ajuste da imagem */
 .foto-perfil {
     width: 290px;
     height: 290px;
@@ -224,6 +247,7 @@ section#sobre-mim p {
     margin-top: 30px;
 }
 
+/* Estilização do rodapé: cor de fundo, texto centralizado, espaçamento, largura total e camada acima do conteúdo */
 footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
@@ -237,6 +261,7 @@ footer {
     box-sizing: border-box;
 }
 
+/* Container dos feixes de luz animados: ocupa toda a tela, fica atrás do conteúdo e impede interação */
 #feixes-de-luz {
     position: absolute;
     top: 0;
@@ -249,6 +274,7 @@ footer {
     overflow: hidden;
 }
 
+/* Estilização dos feixes de luz animados: posicionamento, tamanho, imagem, opacidade e animação */
 .luz {
     position: absolute;
     width: 13px;
@@ -261,7 +287,7 @@ footer {
     animation: float 30s infinite ease-in-out;
 }
 
-
+/* Animação dos feixes de luz: movimenta e altera o tamanho para criar efeito de flutuação */
 @keyframes float {
     0% {
         transform: translate(0, 0) scale(1);
@@ -289,7 +315,7 @@ footer {
 
 /*Estilização do MAIN da página FORMAÇÃO*/
 
-
+/* Container dos cards de formação: usa grid, define espaçamento, largura máxima e centraliza na página */
 .cards-formacao {
     display: grid;
     grid-template-columns: 1fr;
@@ -299,24 +325,29 @@ footer {
     margin: 0 auto;
 }
 
+/* Estilização da lista dos cards de formação: remove marcadores padrão e adiciona recuo à esquerda */
 .cards-formacao ul {
     padding-left: 2rem;
     list-style-type: none;
 }
 
+/* Estiliza os itens principais da lista dos cards de formação: marcador tipo disco e espaçamento inferior */
 .cards-formacao ul>li {
     list-style-type: disc;
     margin-bottom: 0.5rem;
 }
 
+/* Estilização das sublistas dos cards de formação: adiciona recuo à esquerda */
 .cards-formacao ul>li>ul {
     padding-left: 1.5rem;
 }
 
+/* Estilização dos itens das sublistas dos cards de formação: marcador tipo círculo */
 .cards-formacao ul>li>ul>li {
     list-style-type: circle;
 }
 
+/* Estilização dos cards de formação: fundo com gradiente, borda, borda arredondada, sombra e transição de efeito */
 .card {
     background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
     border: 1px solid #A28C14;
@@ -327,24 +358,29 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Espaçamento inferior para imagens dentro dos cards de formação */
 .card img {
     margin-bottom: 20px;
 }
 
+/* Estilização dos títulos h2 dentro dos cards de formação: cor, tamanho e espaçamento inferior */
 .card h2 {
     color: #5A2A27;
     font-size: 1.4rem;
     margin-bottom: 30px;
 }
 
+/* Espaçamento inferior para títulos h2 dentro da seção de formação acadêmica */
 .formacao-academica h2 {
     margin-bottom: 15px;
 }
 
+/* Espaçamento superior para a seção de formação acadêmica */
 .formacao-academica {
     margin-top: 40px;
 }
 
+/* Estilização dos parágrafos dentro dos cards de formação: tamanho da fonte, espaçamento, margens e alinhamento justificado */
 .card p {
     font-size: 1rem;
     line-height: 2;
@@ -352,39 +388,47 @@ footer {
     text-align: justify;
 }
 
+/* Estilização dos detalhes do cargo nos cards de formação: exibe em bloco, define espaçamento e altura da linha */
 .cargo-detalhes {
     display: block;
     margin-bottom: 12px;
     line-height: 1.3;
 }
 
+/* Espaçamento inferior para itens da lista dentro dos cards de formação */
 .card ul>li {
     margin-bottom: 18px;
 }
 
+/* Espaçamento inferior para itens das sublistas dentro dos cards de formação */
 .card ul>li>ul>li {
     margin-bottom: 12px;
 }
 
+/* Destaque para textos em negrito nas listas dos cards de formação: aumenta o tamanho, exibe em bloco e adiciona espaçamento inferior */
 .card ul li strong {
     font-size: 1.1rem;
     display: block;
     margin-bottom: 12px;
 }
 
+/* Efeito de destaque ao passar o mouse sobre os cards de formação */
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 14px rgba(50, 28, 15, 0.2);
 }
 
+/* Espaçamento inferior para itens da lista dentro da seção de experiência profissional */
 .experiencia-profissional ul>li {
     margin-bottom: 40px;
 }
 
+/* Espaçamento inferior para itens da lista dentro da seção de formação complementar */
 .formacao-complementar ul>li {
     margin-bottom: 40px;
 }
 
+/* Espaçamento inferior para itens da lista dentro da seção de conhecimentos e especializações */
 .conhecimentos-especializacoes ul>li {
     margin-bottom: 18px;
 }
@@ -394,6 +438,7 @@ footer {
 
 /*Estilização do MAIN da página PORTFÓLIO*/
 
+/* Estilização do subtítulo da seção de projetos: fonte, cor, tamanho, espaçamento e alinhamento com ícones */
 .secao-projetos .subtitulo {
     font-size: 1.8rem;
     font-family: 'Playfair Display', serif;
@@ -404,17 +449,17 @@ footer {
     gap: 0.5rem;
 }
 
+/* Grid de projetos do portfólio:
+Define layout responsivo em colunas, espaçamento entre os cards e padding interno. */
 .grid-projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Reduza o tamanho mínimo para caber mais colunas */
     gap: 2rem;
-    /* Aumente o espaçamento entre os itens */
     padding: 20px;
-    /* Adicione um espaçamento interno ao grid */
     border: 2;
 }
 
+/* Estilização dos cards de projetos: fundo com gradiente, borda arredondada, sombra, layout flexível e transição de efeito */
 .card-projeto {
     background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
     border-radius: 1rem;
@@ -425,42 +470,38 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    /* Adicione espaçamento interno */
     border: 2px solid #A28C14;
-    /* Adicione uma borda */
 }
 
+/* Efeito de destaque ao passar o mouse sobre os cards de projetos */
 .card-projeto:hover {
     transform: scale(1.05);
-    /* Aumenta levemente o tamanho ao passar o mouse */
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    /* Destaque maior na sombra */
 }
 
+/* Estilização das imagens nos cards de projetos: largura total, altura fixa, corte proporcional e borda inferior */
 .card-projeto img {
     width: 100%;
     height: 200px;
-    /* Aumente a altura da imagem */
     object-fit: cover;
     border-bottom: 2px solid #ddd;
-    /* Adicione uma borda inferior para separar a imagem */
 }
 
+/* Estilização do título h3 nos cards de projetos: margens e tamanho da fonte */
 .card-projeto h3 {
     margin: 1rem 0 0.5rem;
     font-size: 1.5rem;
-    /* Aumente o tamanho do título */
 }
 
-
+/* Estilização do título h4 nos cards de projetos: margens, tamanho, cor e alinhamento centralizado */
 .card-projeto h4 {
     margin: 1rem 0 0.5rem;
     font-size: 1.5rem;
-    /* Aumente o tamanho do título */
     color: #321c0f;
     text-align: center;
 }
 
+/* Estilização do botão de link nos cards de projetos: cor de fundo, texto, borda arredondada e transição */
 .botao-link {
     margin-top: auto;
     padding: 0.5rem 1.5rem;
@@ -472,6 +513,7 @@ footer {
     transition: background-color 0.3s ease;
 }
 
+/* Efeito de destaque ao passar o mouse sobre o botão de link dos cards de projetos */
 .botao-link:hover {
     font-weight: 600;
     color: var(--text-color);
@@ -480,24 +522,7 @@ footer {
     transition: transform 0.10s ease, box-shadow 0.10s ease;
 }
 
-.tags-tecnologias {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.tags-tecnologias span {
-    background-color: #fff5f7;
-    color: #8b2e5e;
-    border: 1px solid #A28C14;
-    border-radius: 0.5rem;
-    padding: 0.3rem 0.7rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
+/* Estilização da seção Notion: fundo claro, borda tracejada, borda arredondada, sombra, centralização e animação de entrada */
 .secao-notion {
     background: #fff5f7;
     border: 2px dashed #A28C14;
@@ -509,18 +534,21 @@ footer {
     animation: fadeIn 1s ease-out;
 }
 
+/* Estilização do título h3 na seção Notion: tamanho, cor e espaçamento inferior */
 .secao-notion h3 {
     font-size: 1.6rem;
     color: #5A2A27;
     margin-bottom: 0.5rem;
 }
 
+/* Estilização dos parágrafos na seção Notion: tamanho da fonte, cor e espaçamento inferior */
 .secao-notion p {
     font-size: 1.3rem;
     color: #321c0f;
     margin-bottom: 1.2rem;
 }
 
+/* Estilização do botão Notion: cor de fundo, texto branco, borda arredondada e sem borda visível */
 .botao-notion {
     padding: 0.8rem 1.5rem;
     background-color: #8b2e5e;
@@ -531,32 +559,13 @@ footer {
     border: 2px solid transparent;
 }
 
+/* Efeito de destaque ao passar o mouse sobre o botão Notion */
 .botao-notion:hover {
     color: var(--text-color);
     background-color: transparent;
     border: 2px solid #A28C14;
     font-weight: 600;
 }
-
-
-/* .botao-portfolio {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #8b2e5e; 
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.botao-portfolio:hover {
-    background-color: #5a2a27;
-    transform: scale(1.05); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-} */
 
 
 
@@ -656,7 +665,7 @@ footer {
     gap: 0.5rem;
     text-decoration: none;
     font-size: 1rem;
-    color: #fff; /* Define o texto como branco antes da animação */
+    color: #fff;
     background-color: #8b2e5e; 
     border: 2px solid transparent;
     border-radius: 8px;
@@ -671,7 +680,7 @@ footer {
 
 .card-contato button:hover {
     font-weight: 600;
-    color: var(--text-color); /* Cor do texto ao passar o mouse */
+    color: var(--text-color);
     background-color: transparent;
     border: 2px solid #A28C14; 
     transform: scale(1.05); 
@@ -694,7 +703,7 @@ footer {
     gap: 0.5rem;
     text-decoration: none;
     font-size: 1rem;
-    color: #fff; /* Define o texto como branco antes da animação */
+    color: #fff;
     background-color: #8b2e5e; 
     border: 2px solid transparent;
     border-radius: 8px;
@@ -707,7 +716,7 @@ footer {
 
 .botao-contato:hover {
     font-weight: 600;
-    color: var(--text-color); /* Cor do texto ao passar o mouse */
+    color: var(--text-color);
     background-color: transparent;
     border: 2px solid #A28C14; 
     transform: scale(1.05); 
