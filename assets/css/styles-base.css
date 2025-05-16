@@ -438,16 +438,37 @@ footer {
 
 /*Estilização do MAIN da página PORTFÓLIO*/
 
-/* Estilização do subtítulo da seção de projetos */
-.secao-projetos .subtitulo {
-    font-size: 1.8rem;
-    font-family: 'Playfair Display', serif;
-    color: #5A2A27;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+
+
+
+/* Estilização do container principal da introdução do portfólio */
+.portfolio-introducao {
+    background-color: #FFFFFF;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
+
+/* Estilização do subtítulo h2 na seção do portfólio */
+.subtitulo-pagina {
+  font-size: 1.8rem;
+  color: #A28C14;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+/* Estilização do parágrafo de introdução na seção do portfólio */
+.descricao-portifolio {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  max-width: 7800px;
+  margin: 0 auto;
+}
+
 
 /* Grid de projetos do portfólio */
 .grid-projetos {
