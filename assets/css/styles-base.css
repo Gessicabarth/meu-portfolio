@@ -470,13 +470,12 @@ footer {
 }
 
 
-/* Grid de projetos do portfólio */
+/* Estilização do container de projetos */
 .grid-projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 20px;
-    border: 2;
 }
 
 /* Estilização dos cards de projetos */
@@ -507,11 +506,6 @@ footer {
     border-bottom: 2px solid #ddd;
 }
 
-/* Estilização do título h3 nos cards de projetos */
-.card-projeto h3 {
-    margin: 1rem 0 0.5rem;
-    font-size: 1.5rem;
-}
 
 /* Estilização do título h4 nos cards de projetos */
 .card-projeto h4 {
