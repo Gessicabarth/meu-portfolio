@@ -1,3 +1,4 @@
+// Código para o efeito de estrelas
 document.addEventListener("DOMContentLoaded", () => {
     const feixesDeLuz = document.getElementById("feixes-de-luz");
     const totalEstrelas = 400; // Número total de estrelas
