@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
 
-/* Reset básico: remove margens e paddings padrão de todos os elementos */
+/* Reset básico: remove margens e espaçamentos padrão de todos os elementos da página */ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Definição de variáveis CSS globais para cores, gradientes e temas do site */
+/* Definição de variáveis globais reutilizáveis em todo o site */
 :root {
     --background-gradient: repeating-linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
     --title-color: #E6B2BA;
@@ -24,7 +24,7 @@
     --footer-text: #321c0f;
 }
 
-/* Define altura total do html e aplica o gradiente de fundo fixo e cobrindo toda a tela */
+/* Aplicação de estilos na base de toda a estrutura da página */
 html {
     height: 100%;
     background: var(--background-gradient);
@@ -32,7 +32,7 @@ html {
     background-size: cover;
 }
 
-/* Estilização do body: define fonte padrão, cor do texto, remove margens, impede rolagem horizontal e configura layout flexível em coluna ocupando toda a altura da tela */
+/* Estilização do corpo principal da página */
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
@@ -45,12 +45,12 @@ body {
     position: relative;
 }
 
-/* Faz o main ocupar todo o espaço disponível entre header e footer no layout flexível */
+/* Faz o container principal da página ocupar todo o espaço disponível entre o cabeçalho e o rodapé */
 main {
     flex: 1;
 }
 
-/* Estilização do header: posiciona, centraliza, aplica fundo, borda arredondada e sombra para destacar o menu */
+/* Estilização do cabeçalho da página */
 header {
     position: relative;
     top: 15px;
@@ -64,7 +64,7 @@ header {
     margin: 0 auto;
 }
 
-/* Estilização do menu de navegação: distribui os itens igualmente em linha e remove margens e paddings */
+/* Estilização do menu de navegação dentro do cabeçalho */
 nav {
     display: flex;
     justify-content: space-around;
@@ -73,7 +73,7 @@ nav {
     padding: 0;
 }
 
-/* Estilização dos links do menu de navegação: remove sublinhado, define cor, espaçamento, borda arredondada e transições suaves */
+/* Estilização dos links do menu de navegação do cabeçalho */
 nav a {
     text-decoration: none;
     color: var(--menu-text);
@@ -95,7 +95,7 @@ nav a.active {
     box-sizing: border-box;
 }
 
-/* Estilização dos ícones dentro dos links do menu de navegação */
+/* Estilização dos ícones que aparecem junto aos links do menu */
 nav a img.icon {
     width: 20px;
     height: 20px;
@@ -103,7 +103,7 @@ nav a img.icon {
     object-fit: contain;
 }
 
-/* Estilização do container principal: define alinhamento, espaçamento, largura, cor de fundo e borda arredondada */
+/* Estilização do container principal */
 .main-container {
     text-align: justify;
     padding: 20px 50px;
@@ -114,7 +114,7 @@ nav a img.icon {
     border-radius: 50px;
 }
 
-/* Estilização do título da seção "Sobre Mim": fonte cursiva, tamanho grande, gradiente no texto e sombra para destaque */
+/* Estilização do título principal da seção "Sobre Mim" */
 section#sobre-mim h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 4.5rem;
@@ -128,13 +128,13 @@ section#sobre-mim h1 {
     text-shadow: 2px 2px 4px rgba(70, 34, 34, 0.3);
 }
 
-/* Estilização do texto da seção "Sobre Mim": define margens laterais e peso da fonte */
+/* Estilização do texto da seção "Sobre Mim" */
 .texto-sobre-mim {
     margin: 0 20px;
     font-weight: 400;
 }
 
-/* Estilização dos títulos h2: fonte serifada, tamanho, peso e cor personalizados */
+/* Estilização dos subtítulos (h2) da seção */
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
@@ -143,7 +143,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Estilização dos parágrafos da seção "Sobre Mim": define tamanho da fonte, espaçamento entre linhas, margens e cor do texto */
+/* Estilização dos parágrafos da seção "Sobre Mim" */
 section#sobre-mim p {
     font-size: 1.0rem;
     line-height: 2;
@@ -151,7 +151,7 @@ section#sobre-mim p {
     color: var(--text-color);
 }
 
-/* Estilização do container de hobbies e paixões: exibe lado a lado com espaçamento e margem superior */
+/* Estilização do container de hobbies e paixões */
 .hobbies-paixoes {
     display: flex;
     justify-content: space-between;
@@ -159,7 +159,7 @@ section#sobre-mim p {
     margin-top: 10px;
 }
 
-/* Estilização das seções de hobbies e paixões: define largura e espaçamento superior */
+/* Estilização das caixas de hobbies e paixões */
 .hobbies,
 .paixoes {
     width: 48%;
@@ -172,7 +172,7 @@ section#sobre-mim p {
     text-align: left;
 }
 
-/* Estilização dos parágrafos da seção "Paixões": define fonte, tamanho, cor, alinhamento e espaçamento */
+/* Estilização dos parágrafos da seção paixões */
 .paixoes p {
     font-size: 1rem;
     line-height: 1.8;
@@ -182,7 +182,7 @@ section#sobre-mim p {
     margin: 0;
 }
 
-/* Estilização da seção "Curiosidades": aplica gradiente de fundo, centraliza texto, define espaçamento, borda, sombra e arredondamento */
+/* Estilização da seção "Curiosidades" (container principal da seção) */
 #curiosidades {
     background: linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
     padding: 40px 20px;
@@ -194,7 +194,7 @@ section#sobre-mim p {
     font-size: 5px;
 }
 
-/* Estilização do Container das curiosidades: exibe itens lado a lado, centraliza, permite quebra de linha e define espaçamento */
+/* Estilização do container interno da seção "Curiosidades" (organiza os itens) */
 .curiosidades-container {
     display: flex;
     justify-content: center;
@@ -203,7 +203,7 @@ section#sobre-mim p {
     margin-top: 40px;
 }
 
-/* Estilização dos itens de curiosidades: fundo, borda arredondada, tamanho fixo, borda e transição de efeito */
+/* Estilização dos itens da seção "Curiosidades" */
 .curiosidade-item {
     background-color: var(--footer-bg);
     border-radius: 10px;
@@ -220,20 +220,20 @@ section#sobre-mim p {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilização das imagens nos itens de curiosidades: define tamanho e espaçamento inferior */
+/* Estilização das imagens nos itens de curiosidades */
 .curiosidade-item img {
     width: 90px;
     height: 90px;
     margin-bottom: 8px;
 }
 
-/* Estilização dos parágrafos dentro dos itens de curiosidades: cor e espaçamento entre linhas */
+/* Estilização dos parágrafos dentro dos itens de curiosidades */
 .curiosidade-item p {
     color: #333333;
     line-height: 1.5;
 }
 
-/* Estilização da foto de perfil: formato circular, borda, sombra, alinhamento à esquerda e ajuste da imagem */
+/* Estilização da foto de perfil */
 .foto-perfil {
     width: 290px;
     height: 290px;
@@ -247,7 +247,7 @@ section#sobre-mim p {
     margin-top: 30px;
 }
 
-/* Estilização do rodapé: cor de fundo, texto centralizado, espaçamento, largura total e camada acima do conteúdo */
+/* Estilização do rodapé */
 footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
@@ -261,7 +261,7 @@ footer {
     box-sizing: border-box;
 }
 
-/* Container dos feixes de luz animados: ocupa toda a tela, fica atrás do conteúdo e impede interação */
+/* Container dos feixes de luz animados */
 #feixes-de-luz {
     position: absolute;
     top: 0;
@@ -274,7 +274,7 @@ footer {
     overflow: hidden;
 }
 
-/* Estilização dos feixes de luz animados: posicionamento, tamanho, imagem, opacidade e animação */
+/* Estilização dos feixes de luz animados */
 .luz {
     position: absolute;
     width: 13px;
@@ -315,7 +315,7 @@ footer {
 
 /*Estilização do MAIN da página FORMAÇÃO*/
 
-/* Container dos cards de formação: usa grid, define espaçamento, largura máxima e centraliza na página */
+/* Container dos cards de formação: Caixa que organiza e centraliza os cards de formação na páginasim */
 .cards-formacao {
     display: grid;
     grid-template-columns: 1fr;
@@ -325,7 +325,7 @@ footer {
     margin: 0 auto;
 }
 
-/* Estilização da lista dos cards de formação: remove marcadores padrão e adiciona recuo à esquerda */
+/* Estilização da lista dos cards de formação */
 .cards-formacao ul {
     padding-left: 2rem;
     list-style-type: none;
@@ -347,7 +347,7 @@ footer {
     list-style-type: circle;
 }
 
-/* Estilização dos cards de formação: fundo com gradiente, borda, borda arredondada, sombra e transição de efeito */
+/* Estilização dos cards: define a aparência visual dos elementos individuais usados em diferentes seções */
 .card {
     background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
     border: 1px solid #A28C14;
@@ -358,7 +358,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Espaçamento inferior para imagens dentro dos cards de formação */
+/* Define o espaçamento inferior para imagens dentro dos cards */
 .card img {
     margin-bottom: 20px;
 }
@@ -370,17 +370,17 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Espaçamento inferior para títulos h2 dentro da seção de formação acadêmica */
+/* Ajusta o espaçamento inferior para títulos h2 na seção de formação acadêmica */
 .formacao-academica h2 {
     margin-bottom: 15px;
 }
 
-/* Espaçamento superior para a seção de formação acadêmica */
+/* Define o espaçamento superior para a seção de formação acadêmica */
 .formacao-academica {
     margin-top: 40px;
 }
 
-/* Estilização dos parágrafos dentro dos cards de formação: tamanho da fonte, espaçamento, margens e alinhamento justificado */
+/* Estilização dos parágrafos dentro dos cards de formação */
 .card p {
     font-size: 1rem;
     line-height: 2;
@@ -388,19 +388,19 @@ footer {
     text-align: justify;
 }
 
-/* Estilização dos detalhes do cargo nos cards de formação: exibe em bloco, define espaçamento e altura da linha */
+/* Estilização dos detalhes do cargo nos cards de formação */
 .cargo-detalhes {
     display: block;
     margin-bottom: 12px;
     line-height: 1.3;
 }
 
-/* Espaçamento inferior para itens da lista dentro dos cards de formação */
+/* Define o espaçamento inferior para itens da lista dentro dos cards */
 .card ul>li {
     margin-bottom: 18px;
 }
 
-/* Espaçamento inferior para itens das sublistas dentro dos cards de formação */
+/* Define o espaçamento inferior para itens das sublistas dentro dos cards */
 .card ul>li>ul>li {
     margin-bottom: 12px;
 }
@@ -438,7 +438,7 @@ footer {
 
 /*Estilização do MAIN da página PORTFÓLIO*/
 
-/* Estilização do subtítulo da seção de projetos: fonte, cor, tamanho, espaçamento e alinhamento com ícones */
+/* Estilização do subtítulo da seção de projetos */
 .secao-projetos .subtitulo {
     font-size: 1.8rem;
     font-family: 'Playfair Display', serif;
@@ -449,8 +449,7 @@ footer {
     gap: 0.5rem;
 }
 
-/* Grid de projetos do portfólio:
-Define layout responsivo em colunas, espaçamento entre os cards e padding interno. */
+/* Grid de projetos do portfólio */
 .grid-projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -459,7 +458,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     border: 2;
 }
 
-/* Estilização dos cards de projetos: fundo com gradiente, borda arredondada, sombra, layout flexível e transição de efeito */
+/* Estilização dos cards de projetos */
 .card-projeto {
     background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
     border-radius: 1rem;
@@ -479,7 +478,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilização das imagens nos cards de projetos: largura total, altura fixa, corte proporcional e borda inferior */
+/* Estilização das imagens nos cards de projetos */
 .card-projeto img {
     width: 100%;
     height: 200px;
@@ -487,13 +486,13 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     border-bottom: 2px solid #ddd;
 }
 
-/* Estilização do título h3 nos cards de projetos: margens e tamanho da fonte */
+/* Estilização do título h3 nos cards de projetos */
 .card-projeto h3 {
     margin: 1rem 0 0.5rem;
     font-size: 1.5rem;
 }
 
-/* Estilização do título h4 nos cards de projetos: margens, tamanho, cor e alinhamento centralizado */
+/* Estilização do título h4 nos cards de projetos */
 .card-projeto h4 {
     margin: 1rem 0 0.5rem;
     font-size: 1.5rem;
@@ -501,7 +500,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     text-align: center;
 }
 
-/* Estilização do botão de link nos cards de projetos: cor de fundo, texto, borda arredondada e transição */
+/* Estilização do botão de link nos cards de projetos */
 .botao-link {
     margin-top: auto;
     padding: 0.5rem 1.5rem;
@@ -522,7 +521,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     transition: transform 0.10s ease, box-shadow 0.10s ease;
 }
 
-/* Estilização da seção Notion: fundo claro, borda tracejada, borda arredondada, sombra, centralização e animação de entrada */
+/* Estilização da seção de direcionamento para o meu portfólio no Notion*/
 .secao-notion {
     background: #fff5f7;
     border: 2px dashed #A28C14;
@@ -534,21 +533,21 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     animation: fadeIn 1s ease-out;
 }
 
-/* Estilização do título h3 na seção Notion: tamanho, cor e espaçamento inferior */
+/* Estilização do título h3 de direcionamento para o meu portfólio no Notion */
 .secao-notion h3 {
     font-size: 1.6rem;
     color: #5A2A27;
     margin-bottom: 0.5rem;
 }
 
-/* Estilização dos parágrafos na seção Notion: tamanho da fonte, cor e espaçamento inferior */
+/* Estilização dos parágrafos de direcionamento para o meu portfólio no Notion */
 .secao-notion p {
     font-size: 1.3rem;
     color: #321c0f;
     margin-bottom: 1.2rem;
 }
 
-/* Estilização do botão Notion: cor de fundo, texto branco, borda arredondada e sem borda visível */
+/* Estilização do botão de direcionamento para o meu portfólio no Notion */
 .botao-notion {
     padding: 0.8rem 1.5rem;
     background-color: #8b2e5e;
@@ -559,7 +558,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     border: 2px solid transparent;
 }
 
-/* Efeito de destaque ao passar o mouse sobre o botão Notion */
+/* Efeito de destaque ao passar o mouse sobre o botão que faz o direcionamento para o meu portfólio no Notion */
 .botao-notion:hover {
     color: var(--text-color);
     background-color: transparent;
@@ -571,6 +570,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
 
 /*Estilização do MAIN da página CONTATO*/
 
+/* Estilização do container da página de contato */
 .container-contato {
     background-color: rgba(255, 248, 246, 0.9);
     padding: 50px 20px;
@@ -580,6 +580,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+/* Estilização do título da página de contato */
 .titulo-contato {
     text-align: center;
     font-size: 2rem;
@@ -587,6 +588,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     color: var(--menu-text);
 }
 
+/* Estilização do bloco de contato */
 .bloco-contato {
     display: flex;
     flex-wrap: wrap;
@@ -594,6 +596,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     justify-content: space-between;
 }
 
+/* Estilização dos cards de contato */
 .card-contato {
     flex: 1 1 45%;
     background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
@@ -605,6 +608,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     border: 2px solid #A28C14;
 }
 
+/* Estilização do primeiro h3 dentro do card de contato */
 .card-contato h3:first-of-type {
     text-align: left;
     font-size: 1.3rem;
@@ -612,6 +616,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     color: var(--text-color);
 }
 
+/* Estilização do segundo h3 dentro do card de contato */
 .card-contato h3:nth-of-type(2) {
     text-align: center;
     font-size: 1.3rem;
@@ -619,16 +624,19 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     color: var(--text-color);
 }
 
+/* Efeito de destaque ao passar o mouse sobre os cards de contato */
 .card-contato:hover {
     transform: scale(1.01);
 }
 
+/* Estilização dos rótulos dentro do cartão */
 .card-contato label {
     font-weight: bold;
     display: block;
     margin-top: 20px;
 }
 
+/* Estilização dos campos de texto e área de mensagem nos cards de contatos */
 .card-contato input,
 .card-contato textarea {
     width: 100%;
@@ -641,6 +649,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     font-size: 1rem;
 }
 
+/* Estilização dos textos de dica (placeholder) nos campos de contato: */
 .card-contato input::placeholder,
 .card-contato textarea::placeholder {
     color: var(--text-color);
@@ -649,6 +658,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Destaque visual ao focar nos campos de texto e área de mensagem */
 .card-contato input:focus,
 .card-contato textarea:focus {
     border: 3px solid #A28C14;
@@ -657,6 +667,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Estilização do botão de envio nos cards de contato */
 .card-contato button {
     margin-top: 20px;
     display: flex;
@@ -678,6 +689,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
 
 }
 
+/* Efeito de destaque ao passar o mouse sobre o botão de envio nos cards de contato */
 .card-contato button:hover {
     font-weight: 600;
     color: var(--text-color);
@@ -687,7 +699,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
-
+/* Estilização do container de botões de contato */
 .botoes-contato {
     display: flex;
     flex-direction: column;
@@ -696,6 +708,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     margin-top: 1.5rem;
 }
 
+/* Estilização dos botões de contato */
 .botao-contato {
     display: flex;
     align-items: center;
@@ -714,6 +727,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     font-weight: 500;
 }
 
+/* Efeito de destaque ao passar o mouse sobre os botões de contato */
 .botao-contato:hover {
     font-weight: 600;
     color: var(--text-color);
@@ -723,6 +737,7 @@ Define layout responsivo em colunas, espaçamento entre os cards e padding inter
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
+/* Estilização das imagens dentro dos botões de contato */
 .botao-contato img {
     width: 20px;
     height: 20px;
