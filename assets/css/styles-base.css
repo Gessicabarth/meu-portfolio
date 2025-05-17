@@ -114,6 +114,19 @@ nav a img.icon {
     border-radius: 50px;
 }
 
+/* Estilização da foto de perfil */
+.foto-perfil {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: 3px solid #FEEADF;
+    box-shadow: 0px 20px 20px rgba(241, 164, 164, 0.2);
+    margin-right: 50px;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Estilização do título principal da seção "Sobre Mim" */
 section#sobre-mim h1 {
     font-family: 'Dancing Script', cursive;
@@ -126,16 +139,21 @@ section#sobre-mim h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px rgba(70, 34, 34, 0.3);
+    margin-top: 20px;
 }
 
 /* Estilização do texto da seção "Sobre Mim" */
 .texto-sobre-mim {
     margin: 0 20px;
     font-weight: 400;
+    text-align: justify;
+    text-justify: distribute;
+    word-spacing: -0.1em;
+    hyphens: auto;
 }
 
 /* Estilização dos subtítulos (h2) da seção */
-h2 {
+section#sobre-mim h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
     font-weight: 600;
@@ -156,14 +174,13 @@ section#sobre-mim p {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 /* Estilização das caixas de hobbies e paixões */
 .hobbies,
 .paixoes {
     width: 48%;
-    margin-top: 30px;
 }
 
 /* Alinha à esquerda os títulos h2 das seções de hobbies e paixões */
@@ -231,20 +248,6 @@ section#sobre-mim p {
 .curiosidade-item p {
     color: #333333;
     line-height: 1.5;
-}
-
-/* Estilização da foto de perfil */
-.foto-perfil {
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    border: 3px solid #FEEADF;
-    box-shadow: 0px 20px 20px rgba(241, 164, 164, 0.2);
-    margin-right: 50px;
-    float: left;
-    object-fit: cover;
-    object-position: center;
-    margin-top: 30px;
 }
 
 /* Estilização do rodapé */
@@ -315,13 +318,16 @@ footer {
 
 /*Estilização do MAIN da página FORMAÇÃO*/
 
+
+
+
 /* Container dos cards de formação: Caixa que organiza e centraliza os cards de formação na páginasim */
 .cards-formacao {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem;
-    max-width: 1000px;
+    padding: 1.5rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -353,6 +359,7 @@ footer {
     border: 1px solid #A28C14;
     border-radius: 12px;
     padding: 1.5rem;
+    margin-bottom: 10px;
     color: var(--text-color);
     box-shadow: 0 4px 8px rgba(50, 28, 15, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -367,17 +374,11 @@ footer {
 .card h2 {
     color: #5A2A27;
     font-size: 1.4rem;
-    margin-bottom: 30px;
-}
-
-/* Ajusta o espaçamento inferior para títulos h2 na seção de formação acadêmica */
-.formacao-academica h2 {
     margin-bottom: 15px;
 }
 
-/* Define o espaçamento superior para a seção de formação acadêmica */
-.formacao-academica {
-    margin-top: 40px;
+.card span {
+    font-style: italic;
 }
 
 /* Estilização dos parágrafos dentro dos cards de formação */
@@ -397,7 +398,7 @@ footer {
 
 /* Define o espaçamento inferior para itens da lista dentro dos cards */
 .card ul>li {
-    margin-bottom: 18px;
+    margin-bottom: 40px;
 }
 
 /* Define o espaçamento inferior para itens das sublistas dentro dos cards */
@@ -418,21 +419,9 @@ footer {
     box-shadow: 0 6px 14px rgba(50, 28, 15, 0.2);
 }
 
-/* Espaçamento inferior para itens da lista dentro da seção de experiência profissional */
-.experiencia-profissional ul>li {
-    margin-bottom: 40px;
+.conhecimento-especialidade ul>li{
+    margin-bottom: 10px;
 }
-
-/* Espaçamento inferior para itens da lista dentro da seção de formação complementar */
-.formacao-complementar ul>li {
-    margin-bottom: 40px;
-}
-
-/* Espaçamento inferior para itens da lista dentro da seção de conhecimentos e especializações */
-.conhecimentos-especializacoes ul>li {
-    margin-bottom: 18px;
-}
-
 
 
 
@@ -701,7 +690,6 @@ footer {
     width: 150px;
     text-align: center;
     font-weight: 500;
-
 }
 
 /* Efeito de destaque ao passar o mouse sobre o botão de envio nos cards de contato */

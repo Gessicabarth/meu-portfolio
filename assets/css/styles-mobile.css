@@ -1,53 +1,53 @@
-/* Responsividade para telas menores que 768px (dispositivos móveis) */
+/* Responsividade para telas entre 480px até 710px (dispositivos tablets) */
 header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 10px 20px;
-    width: 100%; /* Ajusta o tamanho do container */
+    padding-bottom: 10px;
 }
 
-
-/* Ajuste para organizar os links em duas linhas */
-nav {
-    display: flex; /* Exibe os links em um layout flexível */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    justify-content: center; /* Centraliza os links */
-    gap: 10px; /* Espaçamento entre os links */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 0 100px;
+    gap: 5px 40px;
 }
 
 nav a {
-    flex: 1 1 45%; /* Cada link ocupa 45% da largura, ajustando para duas colunas */
-    text-align: center; /* Centraliza o texto dos links */
-    padding: 10px; /* Adiciona espaçamento interno */
-    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    font-size: 0.67rem;
+    padding: 5px 8px;
 }
 
-section#sobre-mim {
-    width: 80%;
-    padding: 20px;
-    margin: 50px auto;
+nav a img.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.main-container {
+    padding: 0;
+    border-radius: 20px;
+}
+
+.foto-perfil {
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
 }
 
 section#sobre-mim h1 {
     font-size: 1.8rem;
-    text-align: center;
+}
+
+section#sobre-mim h2 {
+    font-size: 1.0rem;
 }
 
 section#sobre-mim p {
-    font-size: 0.9rem;
-}
-
-.foto-perfil {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 20px;
-    float: none;
+    font-size: 0.8rem;
 }
 
 .hobbies-paixoes {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .hobbies,
@@ -55,99 +55,212 @@ section#sobre-mim p {
     width: 100%;
 }
 
-.curiosidade-item {
-    width: 100%;
-    padding: 20px;
+.paixoes p,
+.hobbies p {
+  text-align: justify;
+  text-justify: distribute;
+  word-spacing: -0.1em;
+  hyphens: auto;
 }
 
-.curiosidade-item img {
-    width: 50px;
-    height: 50px;
-}
-
-/* Botão do menu sanduíche */
-.menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;/* Muda o cursor para indicar que é clicável */
-    position: absolute;
-    top: 50%;/* Ajusta a posição do botão */
-    right: 20px;/* Ajusta a posição do botão */
-    transform: translateY(-50%);  /* Ajusta o alinhamento vertical */
-    z-index: 1001;/* Garante que o botão fique acima de outros elementos */
-}
-
-.menu-toggle .hamburger {
-    width: 30px;
-    height: 3px;
-    background-color: var(--menu-text);
-    position: relative;
-    display: block;
-}
-
-.menu-toggle .hamburger::before,
-.menu-toggle .hamburger::after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background-color: var(--menu-text);
-    position: absolute;
-    left: 0;
-    transition: 0.3s;
-}
-
-.menu-toggle .hamburger::before {
-    top: -8px;
-}
-
-.menu-toggle .hamburger::after {
-    top: 8px;
-}
-
-/* Esconde o menu por padrão */
-.menu {
-    display: none;
-    /* Esconde o menu inicialmente */
-    flex-direction: column;
-    background-color: var(--menu-bg);
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.menu a {
-    padding: 10px;
+#curiosidades {
+    padding: 0;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    border-bottom: 1px solid #ddd;
-    color: var(--menu-text);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
 }
 
-.menu a img.icon {
-    margin-right: 8px;
-    width: 19px;
-    height: 19px;
+#curiosidades h2 {
+    margin-top: 10px;
 }
 
-/* Ajusta o tamanho apenas do ícone do portfólio */
-.menu a[href="portifolio.html"] img.icon {
-    width: 22px;
-    height: 22px;
+/* Estilização do container interno da seção "Curiosidades" (organiza os itens) */
+.curiosidades-container {
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
-.menu a:last-child {
-    border-bottom: none;
+/* Estilização dos itens da seção "Curiosidades" */
+.curiosidade-item {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
 }
 
-/* Exibe o menu quando aberto */
-.menu.open {
-    display: flex;
+
+/* Estilização das imagens nos itens de curiosidades */
+.curiosidade-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
 }
 
+/* Estilização dos parágrafos dentro dos itens de curiosidades */
+.curiosidade-item p {
+    color: #333333;
+    line-height: 1.5;
+    font-size: 0.55rem !important;
+}
+
+/* Estilização do rodapé */
+footer {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+
+/*Estilização do FORMAÇÃO*/
+
+/* Estilização dos cards: define a aparência visual dos elementos individuais usados em diferentes seções */
+.card {
+    padding: 0.8rem;
+}
+
+.cards-formacao {
+    gap: 1rem;
+}
+
+.card h2 {
+    font-size: 0.8rem;
+}
+
+.card ul>li>strong {
+    font-size: 0.7rem;
+}
+
+.card span {
+    font-size: 0.65rem;
+}
+
+.card p {
+    font-size: 0.65rem;
+    margin: 0 0 0.35rem 0;
+    text-align: justify;
+    text-justify: distribute;
+    word-spacing: -0.2em;
+    hyphens: auto;
+}
+
+.card ul>li {
+    font-size: 0.8rem;
+    margin: 0 0 1.35rem 0;
+    text-align: justify;
+    text-justify: distribute;
+    word-spacing: -0.0em;
+    hyphens: auto;
+}
+
+.card ul>li>ul>li {
+    font-size: 0.65rem;
+    margin-bottom: 5px;
+}
+
+.conhecimento-especialidade ul>li{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+/*Estilização do PORTFÓLIO*/
+.portfolio-introducao {
+    padding: 2.0rem;
+    border-radius: 20px;
+    margin: 3rem 2rem
+}
+
+.subtitulo-pagina {
+    font-size: 1.2rem;
+}
+
+.descricao-portifolio {
+    font-size: 0.8rem;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+}
+
+.card-projeto h4 {
+    font-size: 1rem;
+}
+
+.secao-notion h3 {
+    font-size: 1.2rem;
+}
+
+.secao-notion p {
+    font-size: 0.9rem;
+}
+
+.botao-notion {
+    padding: 12px 10px;
+}
+
+/*Estilização do CONTATO*/
+
+.titulo-contato {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.bloco-contato {
+    margin: 15px;
+    gap: 10px;
+}
+
+.card-contato h3:first-of-type {
+    font-size: 1.0rem;
+}
+
+.card-contato p {
+    font-size: 0.8rem;
+}
+
+.card-contato h3:nth-of-type(2) {
+    font-size: 1.0rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.botoes-contato {
+    margin-top: 1rem;
+}
+
+.botao-contato {
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    width: 150px; 
+    margin-top: 0;
+}
+
+
+/* Estilização dos rótulos dentro do cartão */
+.card-contato label {
+    font-size: 0.9rem;
+}
+
+/* Estilização dos textos de dica (placeholder) nos campos de contato: */
+.card-contato input::placeholder,
+.card-contato textarea::placeholder {
+    font-size: 0.8rem;
+}
+
+/* Estilização dos rótulos dentro do cartão */
+.card-contato label {
+    margin-top: 10px;
+}
+
+/* Estilização dos campos de texto e área de mensagem nos cards de contatos */
+.card-contato input,
+.card-contato textarea {
+    font-size: 0.8rem;
+}
+
+/* Estilização do botão de envio nos cards de contato */
+.card-contato button {
+    margin-top: 0;
+}
