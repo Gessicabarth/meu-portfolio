@@ -1,4 +1,7 @@
-/* Responsividade para telas entre 480px até 710px (dispositivos tablets) */
+/* Responsividade para telas entre (min-width: 481px) and (max-width: 768px) - tablets */
+
+/* Estilização da página SOBRE MIM */
+
 header {
     padding-bottom: 10px;
 }
@@ -34,15 +37,15 @@ nav a {
     margin-right: 20px;
 }
 
-section#sobre-mim h1 {
+#sobre-mim h1 {
     font-size: 2.6rem;
 }
 
-section#sobre-mim h2 {
+#sobre-mim h2 {
     font-size: 1.2rem;
 }
 
-section#sobre-mim p {
+#sobre-mim p {
     font-size: 0.8rem;
 }
 
@@ -106,29 +109,40 @@ footer {
 }
 
 
-/*Estilização do FORMAÇÃO*/
 
+
+
+/*Estilização da página FORMAÇÃO*/
+
+/* Estilização dos títulos h2 "Formação Acadêmica", "Experiência Profissional", "Formação Complementar" e "Conhecimentos e Especialidades" dos cards */
 .card h2 {
     font-size: 1.1rem;
 }
 
-.card ul>li>strong {
-    font-size: 1rem;
-}
-
-.card span {
-    font-size: 0.85rem;
-}
-
+/* Estilização dos parágrafos dos cards */
 .card p {
     font-size: 0.8rem;
 }
 
+/* Estilização do subtexto, dos títulos "Estagiária TI" e "Agente administrativa" , prefeitura... instituto...*/
+.cargo-detalhes {
+    font-size: 0.85rem;
+}
+
+/* Estiliza e deixa com o marcador de lista os subtitulos dos cards e os itens do card "Conhecimentos e Especialidades */
 .card ul>li {
     font-size: 0.8rem;
 }
 
-/*Estilização do PORTFÓLIO*/
+/* Estilização dos subtitulos que estão em listas: "Estagiária TI" e "Agente administrativa" */
+.card ul>li>strong {
+    font-size: 1rem;
+}
+
+
+
+/*Estilização da página PORTFÓLIO*/
+
 .portfolio-introducao {
     padding: 2.0rem;
     border-radius: 20px;
@@ -163,7 +177,10 @@ footer {
     padding: 12px 10px;
 }
 
-/*Estilização do CONTATO*/
+
+
+
+/*Estilização da página CONTATO*/
 
 .titulo-contato {
     font-size: 1.2rem;
@@ -175,7 +192,7 @@ footer {
     gap: 10px;
 }
 
-.card-contato h3:first-of-type {
+.card-contato h3:first-of-type, .card-formulario h3:first-of-type {
     font-size: 1.0rem;
 }
 
@@ -185,7 +202,7 @@ footer {
 
 .card-contato h3:nth-of-type(2) {
     font-size: 1.0rem;
-    margin-top: 40px;
+    margin-top: 40px; /*verificar esta linha e o botao-card*/
     margin-bottom: 10px;
 }
 

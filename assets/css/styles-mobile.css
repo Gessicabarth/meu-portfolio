@@ -1,4 +1,9 @@
-/* Responsividade para telas entre 480px até 710px (dispositivos tablets) */
+/* Responsividade para telas entre (min-width: 320px) and (max-width: 480px) - dispositivos móveis */
+
+
+/* Estilização da página SOBRE MIM */
+
+
 header {
     padding-bottom: 10px;
 }
@@ -32,15 +37,15 @@ nav a img.icon {
     margin-right: 10px;
 }
 
-section#sobre-mim h1 {
+#sobre-mim h1 {
     font-size: 1.8rem;
 }
 
-section#sobre-mim h2 {
+#sobre-mim h2 {
     font-size: 1.0rem;
 }
 
-section#sobre-mim p {
+#sobre-mim p {
     font-size: 0.8rem;
 }
 
@@ -111,29 +116,26 @@ footer {
 }
 
 
-/*Estilização do FORMAÇÃO*/
 
-/* Estilização dos cards: define a aparência visual dos elementos individuais usados em diferentes seções */
-.card {
-    padding: 0.8rem;
-}
 
+/*Estilização da página FORMAÇÃO*/
+
+/* Container geral "oculto" dos cards de formação */
 .cards-formacao {
     gap: 1rem;
 }
 
+/* Estilização dos cards da "Formação Acadêmica", "Experiência Profissional", "Formação Complementar" e "Conhecimentos e Especialidades" */
+.card {
+    padding: 0.8rem;
+}
+
+/* Estilização dos títulos h2 "Formação Acadêmica", "Experiência Profissional", "Formação Complementar" e "Conhecimentos e Especialidades" dos cards */
 .card h2 {
     font-size: 0.8rem;
 }
 
-.card ul>li>strong {
-    font-size: 0.7rem;
-}
-
-.card span {
-    font-size: 0.65rem;
-}
-
+/* Estilização dos parágrafos dos cards */
 .card p {
     font-size: 0.65rem;
     margin: 0 0 0.35rem 0;
@@ -143,6 +145,12 @@ footer {
     hyphens: auto;
 }
 
+/* Estilização do subtexto, dos títulos "Estagiária TI" e "Agente administrativa" , prefeitura... instituto...*/
+.cargo-detalhes {
+    font-size: 0.65rem;
+}
+
+/* Estiliza e deixa com o marcador de lista os subtitulos dos cards e os itens do card "Conhecimentos e Especialidades */
 .card ul>li {
     font-size: 0.8rem;
     margin: 0 0 1.35rem 0;
@@ -152,17 +160,30 @@ footer {
     hyphens: auto;
 }
 
+/* Deixa com o marcador tipo círculo as sublistas do card "Formação Complementar" */
 .card ul>li>ul>li {
     font-size: 0.65rem;
     margin-bottom: 5px;
 }
 
+/* Estilização dos subtitulos que estão em listas: "Estagiária TI" e "Agente administrativa" */
+.card ul>li>strong {
+    font-size: 0.7rem;
+}
+
+/* Estilização dos itens do card "Conhecimentos e Especialidades" */
 .conhecimento-especialidade ul>li{
     font-size: 0.7rem;
     margin-bottom: 10px;
 }
 
-/*Estilização do PORTFÓLIO*/
+
+
+
+
+
+/*Estilização da página PORTFÓLIO*/
+
 .portfolio-introducao {
     padding: 2.0rem;
     border-radius: 20px;
@@ -197,7 +218,11 @@ footer {
     padding: 12px 10px;
 }
 
-/*Estilização do CONTATO*/
+
+
+
+
+/*Estilização da página CONTATO*/
 
 .titulo-contato {
     font-size: 1.2rem;
@@ -209,7 +234,7 @@ footer {
     gap: 10px;
 }
 
-.card-contato h3:first-of-type {
+.card-contato h3:first-of-type, .card-formulario h3:first-of-type {
     font-size: 1.0rem;
 }
 
@@ -239,28 +264,25 @@ footer {
 
 
 /* Estilização dos rótulos dentro do cartão */
-.card-contato label {
+.card-formulario label {
     font-size: 0.9rem;
-}
-
-/* Estilização dos textos de dica (placeholder) nos campos de contato: */
-.card-contato input::placeholder,
-.card-contato textarea::placeholder {
-    font-size: 0.8rem;
-}
-
-/* Estilização dos rótulos dentro do cartão */
-.card-contato label {
     margin-top: 10px;
 }
 
+/* Estilização dos textos de dica (placeholder) nos campos de contato: */
+.card-formulario input::placeholder,
+.card-formulario textarea::placeholder {
+    font-size: 0.8rem;
+}
+
+
 /* Estilização dos campos de texto e área de mensagem nos cards de contatos */
-.card-contato input,
-.card-contato textarea {
+.card-formulario input,
+.card-formulario textarea {
     font-size: 0.8rem;
 }
 
 /* Estilização do botão de envio nos cards de contato */
-.card-contato button {
+.card-formulario button {
     margin-top: 0;
 }

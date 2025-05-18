@@ -128,7 +128,7 @@ nav a img.icon {
 }
 
 /* Estilização do título principal da seção "Sobre Mim" */
-section#sobre-mim h1 {
+#sobre-mim h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 4.5rem;
     font-weight: 400;
@@ -142,6 +142,23 @@ section#sobre-mim h1 {
     margin-top: 20px;
 }
 
+/* Estilização dos subtítulos (h2) da seção */
+#sobre-mim h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #5A2A27;
+    margin-bottom: 10px;
+}
+
+/* Estilização dos parágrafos da seção "Sobre Mim" */
+#sobre-mim p {
+    font-size: 1.0rem;
+    line-height: 2;
+    margin: 0 0 10px 0;
+    color: var(--text-color);
+}
+
 /* Estilização do texto da seção "Sobre Mim" */
 .texto-sobre-mim {
     margin: 0 20px;
@@ -152,22 +169,6 @@ section#sobre-mim h1 {
     hyphens: auto;
 }
 
-/* Estilização dos subtítulos (h2) da seção */
-section#sobre-mim h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #5A2A27;
-    margin-bottom: 10px;
-}
-
-/* Estilização dos parágrafos da seção "Sobre Mim" */
-section#sobre-mim p {
-    font-size: 1.0rem;
-    line-height: 2;
-    margin: 0 0 10px 0;
-    color: var(--text-color);
-}
 
 /* Estilização do container de hobbies e paixões */
 .hobbies-paixoes {
@@ -183,7 +184,7 @@ section#sobre-mim p {
     width: 48%;
 }
 
-/* Alinha à esquerda os títulos h2 das seções de hobbies e paixões */
+/* Alinha à esquerda os títulos h2 "Meus hobbies" e "Minhas paixões" das seções de hobbies e paixões */
 .hobbies h2,
 .paixoes h2 {
     text-align: left;
@@ -199,7 +200,7 @@ section#sobre-mim p {
     margin: 0;
 }
 
-/* Estilização da seção "Curiosidades" (container principal da seção) */
+/* Estilização container principal da seção "Curiosidades"  */
 #curiosidades {
     background: linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
     padding: 40px 20px;
@@ -211,7 +212,7 @@ section#sobre-mim p {
     font-size: 5px;
 }
 
-/* Estilização do container interno da seção "Curiosidades" (organiza os itens) */
+/* Estilização dos container dos cards da seção "Curiosidades" */
 .curiosidades-container {
     display: flex;
     justify-content: center;
@@ -220,7 +221,7 @@ section#sobre-mim p {
     margin-top: 40px;
 }
 
-/* Estilização dos itens da seção "Curiosidades" */
+/* Estilização dos itens do card de itens da seção "Curiosidades" */
 .curiosidade-item {
     background-color: var(--footer-bg);
     border-radius: 10px;
@@ -231,20 +232,20 @@ section#sobre-mim p {
     border: 2px solid #A28C14;
 }
 
-/* Efeito de destaque ao passar o mouse sobre os itens de curiosidades */
+/* Efeito de destaque ao passar o mouse sobre o card de itens seção "Curiosidades" */
 .curiosidade-item:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilização das imagens nos itens de curiosidades */
+/* Estilização das imagens do card de itens da seção "Curiosidades" */
 .curiosidade-item img {
     width: 90px;
     height: 90px;
     margin-bottom: 8px;
 }
 
-/* Estilização dos parágrafos dentro dos itens de curiosidades */
+/* Estilização dos parágrafos dentro do card de itens da seção "Curiosidades" */
 .curiosidade-item p {
     color: #333333;
     line-height: 1.5;
@@ -316,12 +317,11 @@ footer {
 
 
 
-/*Estilização do MAIN da página FORMAÇÃO*/
+/*Estilização da página FORMAÇÃO*/
 
 
 
-
-/* Container dos cards de formação: Caixa que organiza e centraliza os cards de formação na páginasim */
+/* Container geral "oculto" dos cards de formação */
 .cards-formacao {
     display: grid;
     grid-template-columns: 1fr;
@@ -331,29 +331,7 @@ footer {
     margin: 0 auto;
 }
 
-/* Estilização da lista dos cards de formação */
-.cards-formacao ul {
-    padding-left: 2rem;
-    list-style-type: none;
-}
-
-/* Estiliza os itens principais da lista dos cards de formação: marcador tipo disco e espaçamento inferior */
-.cards-formacao ul>li {
-    list-style-type: disc;
-    margin-bottom: 0.5rem;
-}
-
-/* Estilização das sublistas dos cards de formação: adiciona recuo à esquerda */
-.cards-formacao ul>li>ul {
-    padding-left: 1.5rem;
-}
-
-/* Estilização dos itens das sublistas dos cards de formação: marcador tipo círculo */
-.cards-formacao ul>li>ul>li {
-    list-style-type: circle;
-}
-
-/* Estilização dos cards: define a aparência visual dos elementos individuais usados em diferentes seções */
+/* Estilização dos cards da "Formação Acadêmica", "Experiência Profissional", "Formação Complementar" e "Conhecimentos e Especialidades" */
 .card {
     background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
     border: 1px solid #A28C14;
@@ -365,23 +343,21 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Define o espaçamento inferior para imagens dentro dos cards */
-.card img {
-    margin-bottom: 20px;
+/* Efeito de destaque ao passar o mouse sobre os cards de formação */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(50, 28, 15, 0.2);
 }
 
-/* Estilização dos títulos h2 dentro dos cards de formação: cor, tamanho e espaçamento inferior */
+
+/* Estilização dos títulos h2 "Formação Acadêmica", "Experiência Profissional", "Formação Complementar" e "Conhecimentos e Especialidades" dos cards */
 .card h2 {
     color: #5A2A27;
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
 
-.card span {
-    font-style: italic;
-}
-
-/* Estilização dos parágrafos dentro dos cards de formação */
+/* Estilização dos parágrafos dos cards */
 .card p {
     font-size: 1rem;
     line-height: 2;
@@ -389,48 +365,50 @@ footer {
     text-align: justify;
 }
 
-/* Estilização dos detalhes do cargo nos cards de formação */
+/* Estilização do subtexto, dos títulos "Estagiária TI" e "Agente administrativa" , prefeitura... instituto...*/
 .cargo-detalhes {
     display: block;
     margin-bottom: 12px;
     line-height: 1.3;
+    font-style: italic;
 }
 
-/* Define o espaçamento inferior para itens da lista dentro dos cards */
+/* Estilização da lista ul dos cards */
+.card ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+/* Estiliza e deixa com o marcador de lista os subtitulos dos cards e os itens do card "Conhecimentos e Especialidades */
 .card ul>li {
+    list-style-type: disc;
     margin-bottom: 40px;
 }
 
-/* Define o espaçamento inferior para itens das sublistas dentro dos cards */
+/* Deixa com o marcador tipo círculo as sublistas do card "Formação Complementar" */
 .card ul>li>ul>li {
+    list-style-type: circle;
     margin-bottom: 12px;
 }
 
-/* Destaque para textos em negrito nas listas dos cards de formação: aumenta o tamanho, exibe em bloco e adiciona espaçamento inferior */
-.card ul li strong {
+/* Estilização dos subtitulos que estão em listas: "Estagiária TI" e "Agente administrativa" */
+.card ul>li>strong {
     font-size: 1.1rem;
     display: block;
     margin-bottom: 12px;
 }
 
-/* Efeito de destaque ao passar o mouse sobre os cards de formação */
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(50, 28, 15, 0.2);
-}
-
+/* Estilização dos itens do card "Conhecimentos e Especialidades" */
 .conhecimento-especialidade ul>li{
     margin-bottom: 10px;
 }
 
 
 
-/*Estilização do MAIN da página PORTFÓLIO*/
+/*Estilização da página PORTFÓLIO*/
 
 
-
-
-/* Estilização do container principal da introdução do portfólio */
+/* Estilização do container da introdução do portfólio "Bem-vindos ao meu Portfólio */
 .portfolio-introducao {
     background-color: #FFFFFF;
     padding: 2.5rem;
@@ -441,8 +419,8 @@ footer {
     margin-top: 3rem;
 }
 
-/* Estilização do subtítulo h2 na seção do portfólio */
-.subtitulo-pagina {
+/* Estilização do subtítulo h2 da introdução */
+.subtitulo-introducao {
   font-size: 1.8rem;
   color: #A28C14;
   margin-bottom: 1.2rem;
@@ -572,9 +550,11 @@ footer {
 
 
 
+
+
 /*Estilização do MAIN da página CONTATO*/
 
-/* Estilização do container da página de contato */
+/* Estilização do container principal da página de contato */
 .container-contato {
     background-color: rgba(255, 248, 246, 0.9);
     padding: 50px 20px;
@@ -584,7 +564,7 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilização do título da página de contato */
+/* Estilização do título h2 "Vamos nos conectar" */
 .titulo-contato {
     text-align: center;
     font-size: 2rem;
@@ -592,7 +572,7 @@ footer {
     color: var(--menu-text);
 }
 
-/* Estilização do bloco de contato */
+/* Estilização do container de contato e do formulário*/
 .bloco-contato {
     display: flex;
     flex-wrap: wrap;
@@ -601,7 +581,7 @@ footer {
 }
 
 /* Estilização dos cards de contato */
-.card-contato {
+.card-contato, .card-formulario {
     flex: 1 1 45%;
     background: linear-gradient(to bottom, #fadecf, #ffe7ea, #fdeaec);
     padding: 30px;
@@ -612,37 +592,37 @@ footer {
     border: 2px solid #A28C14;
 }
 
-/* Estilização do primeiro h3 dentro do card de contato */
-.card-contato h3:first-of-type {
+/* Estilização do PRIMEIRO h3 "Meus contatos" e "Ou me mande uma mensagem" dentro do card meus contatos e do formulário */
+.card-contato h3:first-of-type, .card-formulario h3:first-of-type {
     text-align: left;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: var(--text-color);
-}
-
-/* Estilização do segundo h3 dentro do card de contato */
-.card-contato h3:nth-of-type(2) {
-    text-align: center;
     font-size: 1.3rem;
     margin-bottom: 20px;
     color: var(--text-color);
 }
 
-/* Efeito de destaque ao passar o mouse sobre os cards de contato */
-.card-contato:hover {
+/* Estilização do SEGUNDO h3 "Acesse minhas redes" dentro do card meus contatos */
+.card-contato h3:nth-of-type(2) {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-top: 25px;
+}
+
+/* Efeito de destaque ao passar o mouse sobre os cards, meus contatos e formulario*/
+.card-contato:hover, .card-formulario:hover {
     transform: scale(1.01);
 }
 
-/* Estilização dos rótulos dentro do cartão */
-.card-contato label {
+/* Estilização dos nomes dos container de mensagem do formulario */
+.card-formulario label {
     font-weight: bold;
     display: block;
     margin-top: 20px;
 }
 
-/* Estilização dos campos de texto e área de mensagem nos cards de contatos */
-.card-contato input,
-.card-contato textarea {
+/* Estilização dos campos de texto e área de mensagem no card de formulário */
+.card-formulario input,
+.card-formulario textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -653,9 +633,9 @@ footer {
     font-size: 1rem;
 }
 
-/* Estilização dos textos de dica (placeholder) nos campos de contato: */
-.card-contato input::placeholder,
-.card-contato textarea::placeholder {
+/* Estilização dos textos de dica (placeholder) nos campos do card do formulário: */
+.card-formulario input::placeholder,
+.card-formulario textarea::placeholder {
     color: var(--text-color);
     font-size: 1rem;
     font-style: italic;
@@ -663,16 +643,16 @@ footer {
 }
 
 /* Destaque visual ao focar nos campos de texto e área de mensagem */
-.card-contato input:focus,
-.card-contato textarea:focus {
+.card-formulario input:focus,
+.card-formulario textarea:focus {
     border: 3px solid #A28C14;
     outline: none;
     box-shadow: 0 0 10px rgba(162, 140, 20, 0.6);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilização do botão de envio nos cards de contato */
-.card-contato button {
+/* Estilização do botão "enviar"" no card de formulário */
+.card-formulario button {
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -692,8 +672,8 @@ footer {
     font-weight: 500;
 }
 
-/* Efeito de destaque ao passar o mouse sobre o botão de envio nos cards de contato */
-.card-contato button:hover {
+/* Efeito de destaque ao passar o mouse sobre o botão de "enviar"" no card formulário */
+.card-formulario button:hover {
     font-weight: 600;
     color: var(--text-color);
     background-color: transparent;
@@ -702,21 +682,19 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
-/* Estilização do container de botões de contato */
+/* Estilização do container de botões/link do card dos meus contatos */
 .botoes-contato {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     margin-top: 1.5rem;
+    
 }
 
-/* Estilização dos botões de contato */
+/* Estilização do link do card dos meus contatos */
 .botao-contato {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 0.5rem;
     text-decoration: none;
     font-size: 1rem;
     color: #fff;
