@@ -7,7 +7,10 @@ Este é meu projeto de portfólio desenvolvido como parte de um trabalho acadêm
 ## 📋 Descrição do Projeto
 
 O portfólio foi projetado para:
-- Apresentar informações sobre mim, incluindo hobbies e paixões.
+- **Página "Sobre Mim"**: Apresentar informações pessoais, hobbies, paixões e curiosidades.
+- **Página "Formação"**: Detalhar minha formação acadêmica, experiência profissional e cursos complementares.
+- **Página "Portfólio"**: Exibir projetos desenvolvidos, com links para repositórios no GitHub.
+- **Página "Contato"**: Fornecer informações de contato, links para redes sociais e um formulário para envio de mensagens.
 - Demonstrar habilidades em desenvolvimento web, como responsividade, estilização e interatividade.
 - Servir como um exemplo prático de aplicação de conceitos aprendidos na faculdade.
 
@@ -16,19 +19,39 @@ O portfólio foi projetado para:
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**: Estrutura do site.
-- **CSS3**: Estilização e responsividade.
+- **CSS3**: Estilização e responsividade, com uso de Media Queries para diferentes dispositivos.
 - **JavaScript**: Adição de interatividade e funcionalidades dinâmicas.
-- **Flexbox**: Organização do layout.
-- **Media Queries**: Ajustes para diferentes tamanhos de tela.
+- **Flexbox e Grid Layout**: Organização do layout.
 
 ---
 
 ## 🎨 Funcionalidades
 
-- **Seção "Sobre Mim"**: Apresenta informações pessoais e curiosidades.
-- **Seção "Hobbies e Paixões"**: Organizada com textos e imagens.
-- **Interatividade com JavaScript**: Funcionalidades dinâmicas para melhorar a experiência do usuário.
-- **Responsividade**: O site se adapta a diferentes tamanhos de tela, incluindo dispositivos móveis e desktops.
+- **Página "Sobre Mim"**:
+  - Apresenta informações pessoais, hobbies, paixões e curiosidades.
+  - Inclui uma seção de curiosidades com ícones e descrições.
+  - Design responsivo para diferentes dispositivos.
+
+- **Página "Formação"**:
+  - Detalha minha formação acadêmica, experiência profissional e cursos complementares.
+  - Inclui uma lista de conhecimentos e especialidades, como ferramentas e linguagens de programação.
+  - Organizada em cards para facilitar a leitura.
+
+- **Página "Portfólio"**:
+  - Exibe projetos desenvolvidos, com links para repositórios no GitHub.
+  - Inclui uma seção para direcionamento ao meu portfólio completo no Notion.
+  - Design limpo e organizado, com destaque para os projetos.
+
+- **Página "Contato"**:
+  - Apresenta informações de contato, como e-mail, telefone e localização.
+  - Inclui botões para acessar minhas redes sociais (GitHub, LinkedIn e Instagram).
+  - Possui um formulário para envio de mensagens diretamente pelo site.
+
+- **Interatividade com JavaScript**:
+  - Funcionalidades como o menu sanduíche e o efeito de estrelas animadas.
+
+- **Responsividade**:
+  - O site se adapta a diferentes tamanhos de tela, incluindo dispositivos móveis, tablets e desktops.
 
 ---
 
@@ -50,17 +73,7 @@ portifolio_trabalho_faculdade/
 └── README.md
 ```
 
----
 
-## 🚀 Como Visualizar o Projeto
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
-2. Abra o arquivo `index.html` no navegador.
-
----
 
 ## 📷 Prévia do Projeto
 
@@ -71,15 +84,24 @@ portifolio_trabalho_faculdade/
 ## 📚 Aprendizados
 
 Durante o desenvolvimento deste projeto, aprendi:
-- A importância de um design responsivo.
-- Como organizar o layout com Flexbox.
-- Boas práticas de estilização com CSS.
+- A importância de um design responsivo e adaptável.
+- Como organizar o layout com Flexbox e Grid Layout.
+- Boas práticas de estilização com CSS, incluindo o uso de variáveis e Media Queries.
 - Como adicionar interatividade com JavaScript.
+- A importância de planejar e implementar um projeto completo.
 
 ---
+
 
 ## 📞 Contato
 
 Se quiser saber mais sobre o projeto ou entrar em contato comigo:
 - **E-mail**: gessica.barth@email.com
 - **LinkedIn**: https://www.linkedin.com/in/gessica-barth
+- **GitHub**: https://github.com/Gessicabarth
+
+---
+
+## 📝 Licença
+
+Este projeto é disponibilizado apenas para fins de visualização. Todos os direitos são reservados. Não é permitido copiar, modificar, distribuir ou utilizar qualquer parte deste projeto sem a permissão expressa do autor.
