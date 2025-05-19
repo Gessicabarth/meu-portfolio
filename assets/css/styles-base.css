@@ -159,7 +159,7 @@ header {
 
 /* Estilização dos parágrafos da seção "Sobre Mim" */
 #sobre-mim p {
-    font-size: 1.0rem;
+    font-size: 1rem;
     line-height: 2;
     margin: 0 0 10px 0;
     color: var(--text-color);
@@ -215,7 +215,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 2px solid #A28C14;
-    font-size: 5px;
+    font-size: 0.31rem;
 }
 
 /* Estilização do título h2 "Curiosidades sobre mim" da seção "Curiosidades" */
