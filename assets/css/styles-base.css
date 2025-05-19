@@ -160,8 +160,7 @@ header {
 /* Estilização dos parágrafos da seção "Sobre Mim" */
 #sobre-mim p {
     font-size: 1rem;
-    line-height: 2;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     color: var(--text-color);
 }
 
@@ -180,8 +179,8 @@ header {
 .hobbies-paixoes {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    margin-top: 40px;
+    gap: 5px;
+    margin-top: 15px;
 }
 
 /* Estilização das caixas de hobbies e paixões */
@@ -209,18 +208,17 @@ header {
 /* Estilização container principal da seção "Curiosidades"  */
 #curiosidades {
     background: linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
-    padding: 40px 20px;
+    padding: 30px;
     text-align: center;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 2px solid #A28C14;
-    font-size: 0.31rem;
 }
 
 /* Estilização do título h2 "Curiosidades sobre mim" da seção "Curiosidades" */
 #curiosidades h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
@@ -232,16 +230,15 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 40px;
 }
 
-/* Estilização dos itens do card de itens da seção "Curiosidades" */
+/* Estilização dos container do card da seção "Curiosidades" */
 .curiosidade-item {
     background-color: var(--footer-bg);
     border-radius: 10px;
     padding: 20px;
-    width: 348px;
-    height: 348px;
+    width: 230px;
+    height: 230px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid #A28C14;
 }
@@ -254,15 +251,16 @@ header {
 
 /* Estilização das imagens do card de itens da seção "Curiosidades" */
 .curiosidade-item img {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 8px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
 }
 
 /* Estilização dos parágrafos dentro do card de itens da seção "Curiosidades" */
 .curiosidade-item p {
     color: #333333;
-    line-height: 1.5;
+    line-height: 1.2rem;
+    font-size: 0.7rem !important;
 }
 
 /* Estilização do rodapé */
@@ -405,7 +403,7 @@ footer {
 /* Deixa com o marcador tipo círculo as sublistas do card "Formação Complementar" */
 .card ul>li>ul>li {
     list-style-type: circle;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 /* Estilização dos subtitulos que estão em listas: "Estagiária TI" e "Agente administrativa" */

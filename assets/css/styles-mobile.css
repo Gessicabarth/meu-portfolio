@@ -1,4 +1,4 @@
-/* Responsividade para telas entre (min-width: 320px) and (max-width: 480px) - dispositivos móveis */
+/* Responsividade para telas entre (min-width: 319px) and (max-width: 480px) - dispositivos móveis */
 
 
 
@@ -85,7 +85,7 @@ header {
 /* Estilização container principal da seção "Curiosidades"  */
 #curiosidades {
     padding: 0;
-    width: 90%;
+    width: 75%;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +94,7 @@ header {
 
 /* Estilização do título h2 "Curiosidades sobre mim" da seção "Curiosidades" */
 #curiosidades h2 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-top: 10px;
 }
 
@@ -106,30 +106,29 @@ header {
 
 /* Estilização dos itens do card de itens da seção "Curiosidades" */
 .curiosidade-item {
-    width: 180px;
-    height: 180px;
+    width: 151px;
+    height: 151px;
     padding: 10px;
 }
 
 
 /* Estilização das imagens do card de itens da seção "Curiosidades" */
 .curiosidade-item img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 8px;
+    width: 20px;
+    height: 20px;
 }
 
 /* Estilização dos parágrafos dentro do card de itens da seção "Curiosidades" */
 .curiosidade-item p {
     color: #333333;
     line-height: 1.5;
-    font-size: 0.55rem !important;
+    font-size: 0.50rem !important;
 }
 
 /* Estilização do rodapé */
 footer {
-    width: 100%;
     font-size: 0.63rem;
+    padding: 15px;
 }
 
 
