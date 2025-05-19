@@ -45,6 +45,17 @@ body {
     position: relative;
 }
 
+/* Estilização do container principal */
+.main-container {
+    text-align: justify;
+    padding: 20px 50px;
+    margin: 60px auto;
+    width: 75%;
+    line-height: 1.8;
+    background-color: var(--footer-bg);
+    border-radius: 50px;
+}
+
 /* Faz o container principal da página ocupar todo o espaço disponível entre o cabeçalho e o rodapé */
 main {
     flex: 1;
@@ -65,7 +76,7 @@ header {
 }
 
 /* Estilização do menu de navegação dentro do cabeçalho */
-nav {
+.menu {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -74,7 +85,7 @@ nav {
 }
 
 /* Estilização dos links do menu de navegação do cabeçalho */
-nav a {
+.menu a {
     text-decoration: none;
     color: var(--menu-text);
     font-size: 1.1rem;
@@ -88,30 +99,19 @@ nav a {
 }
 
 /* Destaca o link do menu de navegação ao passar o mouse ou quando ativo */
-nav a:hover,
-nav a.active {
+.menu a:hover,
+.menu a.active {
     background-color: var(--color-Background-menu-select);
     color: #FFFFFF;
     box-sizing: border-box;
 }
 
 /* Estilização dos ícones que aparecem junto aos links do menu */
-nav a img.icon {
+.menu a img.icon {
     width: 20px;
     height: 20px;
     margin-right: 8px;
     object-fit: contain;
-}
-
-/* Estilização do container principal */
-.main-container {
-    text-align: justify;
-    padding: 20px 50px;
-    margin: 60px auto;
-    width: 75%;
-    line-height: 1.8;
-    background-color: var(--footer-bg);
-    border-radius: 50px;
 }
 
 /* Estilização da foto de perfil */
@@ -127,7 +127,7 @@ nav a img.icon {
     object-position: center;
 }
 
-/* Estilização do título principal da seção "Sobre Mim" */
+/* Estilização do título principal "Sobre mim" */
 #sobre-mim h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 4.5rem;
@@ -142,7 +142,7 @@ nav a img.icon {
     margin-top: 20px;
 }
 
-/* Estilização dos subtítulos (h2) da seção */
+/* Estilização dos subtítulos (h2) "quem sou eu", "Meus Hobbies" e Minhas paixões" */
 #sobre-mim h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
@@ -210,6 +210,13 @@ nav a img.icon {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 2px solid #A28C14;
     font-size: 5px;
+}
+
+#curiosidades h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
 }
 
 /* Estilização dos container dos cards da seção "Curiosidades" */
@@ -428,7 +435,7 @@ footer {
 }
 
 /* Estilização do parágrafo de introdução na seção do portfólio */
-.descricao-portifolio {
+.descricao-portfolio {
   font-size: 1.4rem;
   color: var(--text-color);
   line-height: 1.6;
@@ -436,6 +443,12 @@ footer {
   margin: 0 auto;
 }
 
+/* Estilização do título h2 "Meus Projetos" */
+.subtitulo-projetos {
+    font-size: 2rem;
+    color: #5A2A27;
+    margin-bottom: 0.5rem;
+}
 
 /* Estilização do container de projetos */
 .grid-projetos {
@@ -608,6 +621,56 @@ footer {
     margin-top: 25px;
 }
 
+/* Estilização do parágrafo E-MAIL, TELEFONE e LOCALIZAÇÃO dentro do card meus contatos */
+.card-contato p {
+    font-size: 1rem;
+}
+
+/* Estilização do container de botões/link do card dos meus contatos */
+.botoes-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    
+}
+
+/* Estilização do link do card dos meus contatos */
+.botao-contato {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #8b2e5e; 
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    width: 200px;
+    font-weight: 500;
+}
+
+/* Efeito de destaque ao passar o mouse sobre os botões de contato */
+.botao-contato:hover {
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid #A28C14; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilização das imagens dentro dos botões de contato */
+.botao-contato img {
+    width: 20px;
+    height: 20px;
+}
+
+
 /* Efeito de destaque ao passar o mouse sobre os cards, meus contatos e formulario*/
 .card-contato:hover, .card-formulario:hover {
     transform: scale(1.01);
@@ -630,7 +693,6 @@ footer {
     border-radius: 8px;
     color: var(--text-color);
     background-color: var(--footer-bg);
-    font-size: 1rem;
 }
 
 /* Estilização dos textos de dica (placeholder) nos campos do card do formulário: */
@@ -680,46 +742,4 @@ footer {
     border: 2px solid #A28C14; 
     transform: scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-}
-
-/* Estilização do container de botões/link do card dos meus contatos */
-.botoes-contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    
-}
-
-/* Estilização do link do card dos meus contatos */
-.botao-contato {
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #8b2e5e; 
-    border: 2px solid transparent;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
-    width: 200px; 
-    text-align: center;
-    font-weight: 500;
-}
-
-/* Efeito de destaque ao passar o mouse sobre os botões de contato */
-.botao-contato:hover {
-    font-weight: 600;
-    color: var(--text-color);
-    background-color: transparent;
-    border: 2px solid #A28C14; 
-    transform: scale(1.05); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-}
-
-/* Estilização das imagens dentro dos botões de contato */
-.botao-contato img {
-    width: 20px;
-    height: 20px;
 }

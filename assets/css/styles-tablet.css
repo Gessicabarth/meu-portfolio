@@ -1,11 +1,21 @@
 /* Responsividade para telas entre (min-width: 481px) and (max-width: 768px) - tablets */
 
+
 /* Estilização da página SOBRE MIM */
 
+/* Estilização do container principal */
+.main-container {
+    padding: 0;
+    border-radius: 20px;
+    width: 85%;
+}
+
+/* Estilização do cabeçalho da página */
 header {
     padding-bottom: 10px;
 }
 
+/* Estilização do menu de navegação dentro do cabeçalho */
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,45 +24,41 @@ header {
     align-items: center;
 }
 
+/* Estilização dos links do menu de navegação do cabeçalho */
 .menu a {
+    font-size: 0.9rem;
     width: 60%;
     text-align: center;
-    /* justify-content: center; */
 }
 
-nav a {
-    font-size: 0.9rem;
-
-}
-
-.main-container {
-    padding: 0;
-    border-radius: 20px;
-    width: 85%;
-}
-
+/* Estilização da foto de perfil */
 .foto-perfil {
     width: 180px;
     height: 180px;
     margin-right: 20px;
 }
 
+/* Estilização do título principal "Sobre mim" */
 #sobre-mim h1 {
     font-size: 2.6rem;
 }
 
+/* Estilização dos subtítulos (h2) "Quem sou eu", "Meus Hobbies" e Minhas paixões" */
 #sobre-mim h2 {
     font-size: 1.2rem;
 }
 
+/* Estilização dos parágrafos da seção "Sobre Mim" */
 #sobre-mim p {
     font-size: 0.8rem;
 }
 
+/* Estilização do container de hobbies e paixões */
 .hobbies-paixoes {
     gap: 30px;
 }
 
+/* Estilização dos parágrafos da seção paixões */
 .paixoes p,
 .hobbies p {
   text-align: justify;
@@ -61,6 +67,7 @@ nav a {
   hyphens: auto;
 }
 
+/* Estilização container principal da seção "Curiosidades"  */
 #curiosidades {
     padding: 0;
     width: 95%;
@@ -70,32 +77,32 @@ nav a {
     text-align: center;
 }
 
+/* Estilização do título h2 "Curiosidades sobre mim" da seção "Curiosidades" */
 #curiosidades h2 {
     margin-top: 10px;
 }
 
-/* Estilização do container interno da seção "Curiosidades" (organiza os itens) */
+/* Estilização dos container dos cards da seção "Curiosidades" */
 .curiosidades-container {
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-/* Estilização dos itens da seção "Curiosidades" */
+/* Estilização dos itens do card de itens da seção "Curiosidades" */
 .curiosidade-item {
     width: 180px;
     height: 180px;
     padding: 10px;
 }
 
-
-/* Estilização das imagens nos itens de curiosidades */
+/* Estilização das imagens do card de itens da seção "Curiosidades" */
 .curiosidade-item img {
     width: 30px;
     height: 30px;
     margin-bottom: 8px;
 }
 
-/* Estilização dos parágrafos dentro dos itens de curiosidades */
+/* Estilização dos parágrafos dentro do card de itens da seção "Curiosidades" */
 .curiosidade-item p {
     color: #333333;
     line-height: 1.5;
@@ -143,36 +150,45 @@ footer {
 
 /*Estilização da página PORTFÓLIO*/
 
+/* Estilização do container da introdução do portfólio "Bem-vindos ao meu Portfólio */
 .portfolio-introducao {
-    padding: 2.0rem;
+    padding: 2rem;
     border-radius: 20px;
     margin: 3rem 2rem
 }
 
-.subtitulo-pagina {
-    font-size: 1.2rem;
+/* Estilização do subtítulo h2 da introdução */
+.subtitulo-introducao {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
-.descricao-portifolio {
-    font-size: 0.8rem;
+/* Estilização do parágrafo de introdução na seção do portfólio */
+.descricao-portfolio {
+    font-size: 0.9rem;
 }
 
-.subtitulo {
-    font-size: 1.2rem;
+/* Estilização do título h2 "Meus Projetos" */
+.subtitulo-projetos {
+    font-size: 1.4rem;
 }
 
+/* Estilização do título h4 nos cards de projetos */
 .card-projeto h4 {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
+/* Estilização do título h3 de direcionamento para o meu portfólio no Notion */
 .secao-notion h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
+/* Estilização dos parágrafos de direcionamento para o meu portfólio no Notion */
 .secao-notion p {
     font-size: 0.9rem;
 }
 
+/* Estilização do botão de direcionamento para o meu portfólio no Notion */
 .botao-notion {
     padding: 12px 10px;
 }
@@ -182,68 +198,69 @@ footer {
 
 /*Estilização da página CONTATO*/
 
+/* Estilização do título h2 "Vamos nos conectar" */
 .titulo-contato {
     font-size: 1.2rem;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
+/* Estilização do container de contato e do formulário*/
 .bloco-contato {
-    margin: 15px;
+    margin: 25px;
     gap: 10px;
 }
 
+/* Estilização do PRIMEIRO h3 "Meus contatos" e "Ou me mande uma mensagem" dentro do card meus contatos e do formulário */
 .card-contato h3:first-of-type, .card-formulario h3:first-of-type {
-    font-size: 1.0rem;
+    font-size: 0.95rem;
 }
 
+/* Estilização do SEGUNDO h3 "Acesse minhas redes" dentro do card meus contatos */
+.card-contato h3:nth-of-type(2) {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Estilização do parágrafo E-MAIL, TELEFONE e LOCALIZAÇÃO dentro do card meus contatos */
 .card-contato p {
     font-size: 0.8rem;
 }
 
-.card-contato h3:nth-of-type(2) {
-    font-size: 1.0rem;
-    margin-top: 40px; /*verificar esta linha e o botao-card*/
-    margin-bottom: 10px;
-}
-
+/* Estilização do container de botões/link do card dos meus contatos */
 .botoes-contato {
     margin-top: 1rem;
 }
 
+/* Estilização do link do card dos meus contatos */
 .botao-contato {
     gap: 0.5rem;
     font-size: 0.8rem;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    width: 150px; 
-    margin-top: 0;
+    padding: 0.5rem 5rem;
+    width: 140px;
 }
 
-
-/* Estilização dos rótulos dentro do cartão */
-.card-contato label {
-    font-size: 0.9rem;
-}
-
-/* Estilização dos textos de dica (placeholder) nos campos de contato: */
-.card-contato input::placeholder,
-.card-contato textarea::placeholder {
+/* Estilização dos nomes dos container de mensagem do formulário */
+.card-formulario label {
     font-size: 0.8rem;
-}
-
-/* Estilização dos rótulos dentro do cartão */
-.card-contato label {
     margin-top: 10px;
 }
 
-/* Estilização dos campos de texto e área de mensagem nos cards de contatos */
-.card-contato input,
-.card-contato textarea {
-    font-size: 0.8rem;
+/* Estilização dos campos de texto e área de mensagem no card de formulário */
+.card-formulario input,
+.card-formulario textarea {
+    width: 100%;
+    padding: 10px;
 }
 
-/* Estilização do botão de envio nos cards de contato */
-.card-contato button {
-    margin-top: 0;
+/* Estilização dos textos de dica (placeholder) nos campos do card do formulário: */
+.card-formulario input::placeholder,
+.card-formulario textarea::placeholder {
+    font-size: 0.7rem;
+}
+
+/* Estilização do botão "enviar"" no card de formulário */
+.card-formulario button {
+    font-size: 0.8rem;
+    width: 140px;
+    margin-top: 0.5rem;
 }
