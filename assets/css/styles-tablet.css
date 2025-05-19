@@ -1,6 +1,7 @@
 /* Responsividade para telas entre (min-width: 481px) and (max-width: 768px) - tablets */
 
 
+
 /* Estilização da página SOBRE MIM */
 
 /* Estilização do container principal */
@@ -117,6 +118,8 @@ footer {
 
 
 
+/*-----------------------------------------------------------------*/
+
 
 
 /*Estilização da página FORMAÇÃO*/
@@ -145,6 +148,10 @@ footer {
 .card ul>li>strong {
     font-size: 1rem;
 }
+
+
+
+/*-----------------------------------------------------------------*/
 
 
 
@@ -194,6 +201,9 @@ footer {
 }
 
 
+
+
+/*-----------------------------------------------------------------*/
 
 
 /*Estilização da página CONTATO*/

@@ -10,6 +10,12 @@
     box-sizing: border-box;
 }
 
+
+
+/*Estilização da página index - SOBRE MIM */
+
+
+
 /* Definição de variáveis globais reutilizáveis em todo o site */
 :root {
     --background-gradient: repeating-linear-gradient(to bottom, #C599B6, #E6B2BA, #FAD0C4);
@@ -212,6 +218,7 @@ header {
     font-size: 5px;
 }
 
+/* Estilização do título h2 "Curiosidades sobre mim" da seção "Curiosidades" */
 #curiosidades h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -323,6 +330,9 @@ footer {
 
 
 
+/*-----------------------------------------------------------------*/
+
+
 
 /*Estilização da página FORMAÇÃO*/
 
@@ -409,6 +419,9 @@ footer {
 .conhecimento-especialidade ul>li{
     margin-bottom: 10px;
 }
+
+
+/*-----------------------------------------------------------------*/
 
 
 
@@ -562,6 +575,8 @@ footer {
 }
 
 
+
+/*-----------------------------------------------------------------*/
 
 
 
