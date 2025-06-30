@@ -592,9 +592,9 @@ footer {
 
 /* Estilização do título h2 "Vamos nos conectar" */
 .titulo-contato {
-    text-align: center;
+    text-align: center;/* Alinha o título ao centro */
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 30px;/* Espaçamento abaixo do título */
     color: var(--menu-text);
 }
 
@@ -631,7 +631,7 @@ footer {
     text-align: center;
     font-size: 1.3rem;
     color: var(--text-color);
-    margin-top: 25px;
+    margin-top: 60px;
 }
 
 /* Estilização do parágrafo E-MAIL, TELEFONE e LOCALIZAÇÃO dentro do card meus contatos */

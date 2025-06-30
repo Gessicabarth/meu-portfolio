@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato Gessica Barth</title>
 
-<link rel="stylesheet" href="assets/css/styles-base.css">
+    <link rel="stylesheet" href="assets/css/styles-base.css">
     <link rel="stylesheet" href="assets/css/styles-mobile.css" media="only screen and (min-width: 319px) and (max-width: 481px)">
     <link rel="stylesheet" href="assets/css/styles-tablet.css" media="only screen and (min-width: 481px) and (max-width: 769px)">
 
@@ -43,9 +43,8 @@
             <!-- Dados pessoais -->
             <div class="card-contato">
                 <h3>Meus contatos</h3>
-                <p><strong>E-mail:</strong> <a href="geh.barth@gmail.com">geh.barth@gmail.com</a></p>
-                <p><strong>Telefone:</strong> (51) 9********</p>
-                <p><strong>Localização:</strong> Imbé, RS</p>
+                <p><strong>E-mail:</strong> geh.barth@gmail.com</p>
+                <p><strong>Localização:</strong> Imbé, RS.</p>
 
                 <h3>Acesse minhas redes:</h3>
                 <div class="botoes-contato">
@@ -61,16 +60,11 @@
                         LinkedIn
                     </a>
 
-                    <!-- Botão de link para o Instagram -->
-                    <a href="https://www.instagram.com/gessica.barth/" target="_blank" class="botao-contato">
-                        <img src="assets/icons/instagram.png" alt="Ícone Istagram">
-                        Istagram
-                    </a>
                 </div>
             </div>
 
             <!-- Formulário -->
-            <form class="card-formulario">
+            <form class="card-formulario" id="contactForm">
                 <h3>Ou me mande uma mensagem:</h3>
 
                 <label for="nome-sobrenome">Nome e Sobrenome</label>
@@ -82,7 +76,7 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Digite sua mensagem"></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="button" id="enviar">Enviar</button>
             </form>
         </section>
     </main>
