@@ -58,7 +58,7 @@ O portfólio foi projetado para:
 ## 📂 Estrutura do Projeto
 
 ```plaintext
-portifolio_trabalho_faculdade/
+meu-portfolio/
 ├── assets/
 │   ├── css/
 │   │   └── styles.css
