@@ -75,9 +75,18 @@ meu-portfolio/
 
 
 
-## 📷 Prévia do Projeto
+## 📷 Capturas de Tela
 
-...
+### Página Sobre Mim
+
+<img width="2441" height="1265" alt="sobre-mim" src="https://github.com/user-attachments/assets/672ac71b-956d-467e-828f-0cc7c97be437" />
+
+
+### Página portfólio
+
+<img width="2435" height="1264" alt="portfólio" src="https://github.com/user-attachments/assets/62216bff-d5cd-43aa-9e7f-82d3d3c53d7a" />
+
+
 
 ---
 
